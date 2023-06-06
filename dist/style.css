@@ -1,0 +1,79 @@
+ /* CSS for Navbar */
+ .header {
+    padding: 20px;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-logo {
+    flex: 0 0 auto;
+  }
+
+  .navbar-links {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .book-consultation {
+    flex: 0 0 auto;
+  }
+
+  .toggle-btn {
+    display: none;
+    cursor: pointer;
+  }
+
+  .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .toggle-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .toggle-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar-links {
+      display: none;
+    }
+
+    .toggle-btn {
+      display: block;
+    }
+
+    .navbar-links-toggle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .navbar-links-toggle a {
+      margin-bottom: 10px;
+    }
+  }
+
+  .bg-img{
+    background-image: url("/images/images/Landing/background.jpg");
+    background-size: cover;
+  }
+   /* CSS for Landing Page */
+ 
