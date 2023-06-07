@@ -123,8 +123,25 @@ h5 {
   background-size: cover;
   background-position: center;
 }
+
+@media (max-width: 768px) {
+  .pointer-image {
+    animation: rotatePointer 2s infinite linear;
+  }
+
+  @keyframes rotatePointer {
+    0% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
+  }
+}
 /* Rest of your existing CSS styles */
 
+
+/* Amara 👇👇*/
 /*CTA 1*/
 .cta-1 {
   background-color: #000;

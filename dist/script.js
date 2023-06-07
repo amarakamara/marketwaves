@@ -13,4 +13,3 @@ document.querySelector(".toggle-btn").addEventListener("click", function () {
 });
 
 // slider
-  
