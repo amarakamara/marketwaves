@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 h1,
@@ -140,8 +141,21 @@ h5 {
 }
 /* Rest of your existing CSS styles */
 
-
 /* Amara 👇👇*/
+
+.overlay-logo {
+  width: 60%;
+  height: 60%;
+  opacity: 30%;
+  background-color: none;
+}
+.overlay-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
 /*CTA 1*/
 .cta-1 {
   background-color: #000;
@@ -153,17 +167,9 @@ h5 {
 }
 
 /*Why choose us*/
-.why-items img {
-  width: 15%;
-  height: 10%;
-}
-.why-items p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: larger;
-  padding-right: 10%;
-  padding-left: 2%;
-}
 .why-img {
-  width: 100%;
-  height: 20%;
+  width: 60%;
+}
+.why-us {
+  padding-bottom: 0;
 }
