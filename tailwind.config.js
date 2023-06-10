@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     colors: {
       gold: "#d8ba75",
-      "greenColor": "#019267",
-      "light-green": "#c1d8c8",
+      greenColor: "#019267",
+      green: "#c1d8c8",
       black: "#000000",
       lightB: "#171717",
     },

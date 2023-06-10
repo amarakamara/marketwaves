@@ -173,3 +173,13 @@ h5 {
 .why-us {
   padding-bottom: 0;
 }
+
+/*Our Work*/
+.our-work{
+  background-color: #000;
+}
+.item-container{
+  gap: 2%;
+
+  margin: 1% 0;
+}
