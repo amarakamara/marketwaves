@@ -4,6 +4,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -170,16 +172,19 @@ h5 {
 .why-img {
   width: 60%;
 }
+
+@media (min-width: 375px) {
+  .mobile\:w-max {
+    width: max-content;
+  }
+}
 .why-us {
   padding-bottom: 0;
 }
 
 /*Our Work*/
-.our-work{
+.our-work {
   background-color: #000;
 }
-.item-container{
-  gap: 2%;
 
-  margin: 1% 0;
-}
+
