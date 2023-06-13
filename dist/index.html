@@ -19,8 +19,12 @@
     />
     <!-- font awesome -->
     <link rel="stylesheet" href="/path/to/cdn/fontawesome.min.css" />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="/dist/swiperCSS.css" />
+
     <!-- Tailwind output.css link -->
     <link rel="stylesheet" href="output.css" />
+    <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -360,57 +364,125 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="testimonial all-section bg-white text-center text-black">
+    <section
+      class="testimonial-section all-section bg-white text-center text-black"
+    >
       <h2 class="text-black text-6xl text-bold px-px py-10 mobile:px-0">
         "Still not convinced? <br />
         Here is what our clients have to say."
       </h2>
-      <div class="bg-gold flex flex-row overflow-hidden">
-        <!-- testimonial previous button -->
-        <div class="w-1/6 my-auto">
-          <a href="#" class="al ml-10 previous round">&#8249;</a>
-        </div>
 
-        <!-- testimonial inner/ element -->
-        <div
-          class="bg-gold rounded-2xl py-56 w-1/21 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
-        >
-          <!-- testimonial Image -->
+      <div class="bg-gold testimonial relative mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
           <div
-            class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
+            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
           >
             <div
-              class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+              class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
             >
-              <img
-                class="testimonial-image w-full h-full"
-                src="/images/images/why us/7814525.jpg"
-                alt="image"
-              />
+              <div
+                class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+              >
+                <img
+                  class="testimonial-image w-full h-full"
+                  src="/images/images/why us/7814525.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div
+              class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+            >
+              <p class="text-xl text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                culpa provident, eum perspiciatis in impedit suscipit corrupti
+                perferendis harum vero amet mollitia temporibus repudiandae
+                ducimus quasi beatae consequatur similique nam.
+              </p>
+              <h2 class="pt-4 text-xl text-black">
+                Amara A. Kamara , CEO XYZ COMPANY
+              </h2>
             </div>
           </div>
-          <!-- testimonial description and name -->
+          <!-- Slide 2        -->
           <div
-            class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
           >
-            <p class="text-xl text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              culpa provident, eum perspiciatis in impedit suscipit corrupti
-              perferendis harum vero amet mollitia temporibus repudiandae
-              ducimus quasi beatae consequatur similique nam.
-            </p>
-            <h2 class="pt-4 text-xl text-black">
-              Amara A. Kamara , CEO XYZ COMPANY
-            </h2>
+            <div
+              class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
+            >
+              <div
+                class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+              >
+                <img
+                  class="testimonial-image w-full h-full"
+                  src="/images/images/why us/7814525.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div
+              class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+            >
+              <p class="text-xl text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                culpa provident, eum perspiciatis in impedit suscipit corrupti
+                perferendis harum vero amet mollitia temporibus repudiandae
+                ducimus quasi beatae consequatur similique nam.
+              </p>
+              <h2 class="pt-4 text-xl text-black">
+                Omaru A. Kamara , CEO XYZ COMPANY
+              </h2>
+            </div>
           </div>
+
+          <!-- Slide 3        -->
+          <div
+            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
+          >
+            <div
+              class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
+            >
+              <!-- image        -->
+              <div
+                class="shrink-0 lg:w-300 lg:h-300 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+              >
+                <img
+                  class="testimonial-image w-full h-full"
+                  src="/images/images/why us/7814525.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div
+              class="lg:text-left lg:mt-3 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+            >
+              <p class="text-xl text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                culpa provident, eum perspiciatis in impedit suscipit corrupti
+                perferendis harum vero amet mollitia temporibus repudiandae
+                ducimus quasi beatae consequatur similique nam.
+              </p>
+              <h2 class="pt-4 text-xl text-black text-outfit">
+                Muhammad A. Kamara , CEO XYZ COMPANY
+              </h2>
+            </div>
+          </div>
+
+          <!-- button/indicator -->
         </div>
-        <!-- testimonial next button -->
-        <div class="w-1/6 my-auto">
-          <a href="#" class="al mr-10 next round">&#8250;</a>
-        </div>
+        <div class="swiper-button-next text-black"></div>
+        <div class="swiper-button-prev text-black"></div>
+        <div class="swiper-pagination text-black"></div>
       </div>
     </section>
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- swiper JS -->
+    <script src="/dist/swiperJS.js"></script>
+    <!-- Javascript -->
     <script src="script.js"></script>
   </body>
 </html>

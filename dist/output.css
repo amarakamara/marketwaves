@@ -562,12 +562,24 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
+.static {
+  position: static;
+}
+
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .bottom-0 {
@@ -590,11 +602,6 @@ video {
   margin: 0px;
 }
 
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -605,33 +612,12 @@ video {
   margin-right: auto;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
 
 .mb-4 {
   margin-bottom: 1rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -650,10 +636,6 @@ video {
   display: none;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -664,14 +646,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.w-1\/6 {
-  width: 16.666667%;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .w-auto {
@@ -700,12 +674,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.resize {
+  resize: both;
 }
 
-.flex-row {
-  flex-direction: row;
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -744,10 +718,6 @@ video {
 
 .rounded-2xl {
   border-radius: 1rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
 }
 
 .rounded-lg {
@@ -935,6 +905,26 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.invert {
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -965,6 +955,10 @@ video {
     width: 50%;
   }
 
+  .mobile\:w-300 {
+    width: 18.75rem;
+  }
+
   .mobile\:w-full {
     width: 100%;
   }
@@ -972,10 +966,6 @@ video {
   .mobile\:w-max {
     width: -moz-max-content;
     width: max-content;
-  }
-
-  .mobile\:w-300 {
-    width: 18.75rem;
   }
 
   .mobile\:flex-col {
@@ -1062,16 +1052,16 @@ video {
     width: 50%;
   }
 
+  .md\:w-300 {
+    width: 18.75rem;
+  }
+
   .md\:w-4\/12 {
     width: 33.333333%;
   }
 
   .md\:w-60 {
     width: 15rem;
-  }
-
-  .md\:w-300 {
-    width: 18.75rem;
   }
 
   .md\:flex-row {
@@ -1120,12 +1110,20 @@ video {
     margin-right: 2rem;
   }
 
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lg\:mt-4 {
     margin-top: 1rem;
   }
 
   .lg\:h-120 {
     height: 7.5rem;
+  }
+
+  .lg\:h-300 {
+    height: 18.75rem;
   }
 
   .lg\:w-1\/2 {
@@ -1136,16 +1134,20 @@ video {
     width: 25%;
   }
 
+  .lg\:w-120 {
+    width: 7.5rem;
+  }
+
+  .lg\:w-300 {
+    width: 18.75rem;
+  }
+
   .lg\:w-4\/12 {
     width: 33.333333%;
   }
 
   .lg\:w-60 {
     width: 15rem;
-  }
-
-  .lg\:w-120 {
-    width: 7.5rem;
   }
 
   .lg\:flex-row {

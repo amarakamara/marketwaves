@@ -13,45 +13,16 @@ document.querySelector(".toggle-btn").addEventListener("click", function () {
 
 // slider
 
-$(document).ready(function () {
-  var slides = $(".testimonial-slide");
-  var indicators = $(".testimonial-indicator");
-  var currentSlide = 0;
-
-  // Show initial slide and set active indicator
-  slides.eq(currentSlide).addClass("active");
-  indicators.eq(currentSlide).addClass("active");
-
-  // Previous slide event
-  $(".previous").click(function (e) {
-    e.preventDefault();
-    goToSlide(currentSlide - 1);
-  });
-
-  // Next slide event
-  $(".next").click(function (e) {
-    e.preventDefault();
-    goToSlide(currentSlide + 1);
-  });
-
-  // Go to specific slide
-  function goToSlide(index) {
-    // Wrap slide index within the range of available slides
-    if (index < 0) {
-      index = slides.length - 1;
-    } else if (index >= slides.length) {
-      index = 0;
-    }
-
-    // Hide current slide and remove active classes
-    slides.eq(currentSlide).removeClass("active");
-    indicators.eq(currentSlide).removeClass("active");
-
-    // Show new slide and add active classes
-    slides.eq(index).addClass("active");
-    indicators.eq(index).addClass("active");
-
-    // Update current slide index
-    currentSlide = index;
-  }
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
