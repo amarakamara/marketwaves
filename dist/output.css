@@ -594,6 +594,54 @@ video {
   top: 50%;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
+.top-120 {
+  top: 7.5rem;
+}
+
+.top-full {
+  top: 100%;
+}
+
+.right-96 {
+  right: 24rem;
+}
+
+.right-full {
+  right: 100%;
+}
+
+.-left-0 {
+  left: -0px;
+}
+
+.-left-5 {
+  left: -1.25rem;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
 .order-last {
   order: 9999;
 }
@@ -618,6 +666,26 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.ml-56 {
+  margin-left: 14rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
+.ml-96 {
+  margin-left: 24rem;
+}
+
+.ml-300 {
+  margin-left: 18.75rem;
 }
 
 .flex {
@@ -716,6 +784,14 @@ video {
   overflow: hidden;
 }
 
+.overflow-clip {
+  overflow: clip;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -780,6 +856,10 @@ video {
      object-fit: contain;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -818,6 +898,11 @@ video {
 .py-56 {
   padding-top: 14rem;
   padding-bottom: 14rem;
+}
+
+.py-48 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .pb-10 {
@@ -879,6 +964,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1110,16 +1200,36 @@ video {
     margin-right: 2rem;
   }
 
-  .lg\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
   .lg\:mt-4 {
     margin-top: 1rem;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:mt-96 {
+    margin-top: 24rem;
+  }
+
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .lg\:h-120 {
     height: 7.5rem;
+  }
+
+  .lg\:h-200 {
+    height: 12.5rem;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:h-300 {
@@ -1138,16 +1248,20 @@ video {
     width: 7.5rem;
   }
 
-  .lg\:w-300 {
-    width: 18.75rem;
-  }
-
   .lg\:w-4\/12 {
     width: 33.333333%;
   }
 
   .lg\:w-60 {
     width: 15rem;
+  }
+
+  .lg\:w-200 {
+    width: 12.5rem;
+  }
+
+  .lg\:w-300 {
+    width: 18.75rem;
   }
 
   .lg\:flex-row {

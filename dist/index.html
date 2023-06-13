@@ -18,7 +18,10 @@
       rel="stylesheet"
     />
     <!-- font awesome -->
-    <link rel="stylesheet" href="/path/to/cdn/fontawesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Swiper's CSS -->
     <link rel="stylesheet" href="/dist/swiperCSS.css" />
 
@@ -367,22 +370,23 @@
     <section
       class="testimonial-section all-section bg-white text-center text-black"
     >
+      <i class="fa-sharp fa-solid fa-quote-left q-left"></i>
       <h2 class="text-black text-6xl text-bold px-px py-10 mobile:px-0">
         "Still not convinced? <br />
         Here is what our clients have to say."
       </h2>
 
-      <div class="bg-gold testimonial relative mySwiper">
+      <div class="bg-gold testimonial relative mySwiper p-0">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div
-            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
+            class="bg-gold rounded-2xl py-48 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
             >
               <div
-                class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+                class="shrink-0 lg:w-200 lg:h-200 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
               >
                 <img
                   class="testimonial-image w-full h-full"
@@ -392,7 +396,7 @@
               </div>
             </div>
             <div
-              class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+              class="lg:text-left lg:mt-6 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
             >
               <p class="text-xl text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -413,7 +417,7 @@
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
             >
               <div
-                class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+                class="shrink-0 lg:w-200 lg:h-200 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
               >
                 <img
                   class="testimonial-image w-full h-full"
@@ -423,7 +427,7 @@
               </div>
             </div>
             <div
-              class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+              class="lg:text-left lg:mt-6 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
             >
               <p class="text-xl text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -446,7 +450,7 @@
             >
               <!-- image        -->
               <div
-                class="shrink-0 lg:w-300 lg:h-300 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+                class="shrink-0 lg:w-200 lg:h-200 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
               >
                 <img
                   class="testimonial-image w-full h-full"
@@ -456,7 +460,7 @@
               </div>
             </div>
             <div
-              class="lg:text-left lg:mt-3 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+              class="lg:text-left lg:mt-6 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
             >
               <p class="text-xl text-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
@@ -464,19 +468,33 @@
                 perferendis harum vero amet mollitia temporibus repudiandae
                 ducimus quasi beatae consequatur similique nam.
               </p>
-              <h2 class="pt-4 text-xl text-black text-outfit">
+              <h2 class="pt-4 text-xl text-black">
                 Muhammad A. Kamara , CEO XYZ COMPANY
               </h2>
             </div>
           </div>
-
-          <!-- button/indicator -->
         </div>
+        <!-- button/indicator -->
+
         <div class="swiper-button-next text-black"></div>
         <div class="swiper-button-prev text-black"></div>
-        <div class="swiper-pagination text-black"></div>
+        <div class="swiper-pagination text-black m-o"></div>
       </div>
     </section>
+    <!-- Testimonial end -->
+    <!-- cta3 -->
+    <section class="all-section text-center cta-2 bg-greenColor">
+      <h2 class="text-white lg:text-6xl text-bold px-20 py-10 mobile:px-0">
+        "Get in touch with our brilliant sales team for the best offer in
+        growing your business."
+      </h2>
+      <button
+        class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta2-btn"
+      >
+        BOOK AN APPOINTMENT
+      </button>
+    </section>
+    <!-- cta3 end -->
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

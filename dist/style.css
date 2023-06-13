@@ -209,3 +209,19 @@ h5 {
 .swiper-pagination-bullet {
   background-color: #000;
 }
+
+.swiper-pagination-bullet {
+  background-color: #000;
+}
+.q-left {
+  position: absolute;
+  left: 2%;
+  font-size: 10rem;
+  opacity: 20%;
+}
+.q-right {
+  position: absolute;
+  right: 2%;
+  font-size: 10rem;
+  opacity: 20%;
+}
