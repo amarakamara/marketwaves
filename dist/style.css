@@ -187,4 +187,9 @@ h5 {
   background-color: #000;
 }
 
-
+/*Testimonial Image*/
+.testimonial-image {
+  width: 15%;
+  border-radius: 100%;
+  border: 2px solid white;
+}

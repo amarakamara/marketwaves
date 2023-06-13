@@ -5,7 +5,6 @@ function toggleNavbar() {
 
   navbarLinks.classList.toggle("hidden");
   toggleBtn.classList.toggle("active");
-
 }
 
 document.querySelector(".toggle-btn").addEventListener("click", function () {
@@ -13,3 +12,4 @@ document.querySelector(".toggle-btn").addEventListener("click", function () {
 });
 
 // slider
+
