@@ -18,7 +18,13 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
     },
-    extend: {},
+    extend: {
+      spacing: {
+        120: "7.5rem",
+        200: "12.5rem",
+        300: "18.75rem",
+      },
+    },
   },
   plugins: [],
 };

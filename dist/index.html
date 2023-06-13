@@ -365,37 +365,52 @@
         "Still not convinced? <br />
         Here is what our clients have to say."
       </h2>
-      <div class="bg-gold flex flex-row">
+      <div class="bg-gold flex flex-row overflow-hidden">
+        <!-- testimonial previous button -->
         <div class="w-1/6 my-auto">
-          <a href="#" class="al previous round">&#8249;</a>
+          <a href="#" class="al ml-10 previous round">&#8249;</a>
         </div>
+
+        <!-- testimonial inner/ element -->
         <div
-          class="bg-gold rounded-lg py-64 w-1/21 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
+          class="bg-gold rounded-2xl py-56 w-1/21 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
         >
-          <div class="shrink-0 mr-10 testimonial-container">
-            <img
-              class="testimonial-image w-full h-full md:flex-col sm:flex-col mobile:flex-col"
-              src="/images/images/why us/7814525.jpg"
-              alt="image"
-            />
+          <!-- testimonial Image -->
+          <div
+            class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
+          >
+            <div
+              class="shrink-0 lg:w-120 lg:h-120 md:w-300 md:h-300 sm:w-300 sm:h-300 mobile:w-300 mobile:h-300 testimonial-container"
+            >
+              <img
+                class="testimonial-image w-full h-full"
+                src="/images/images/why us/7814525.jpg"
+                alt="image"
+              />
+            </div>
           </div>
-          <div class="text-left my-auto">
+          <!-- testimonial description and name -->
+          <div
+            class="lg:text-left lg:mt-4 md:mt-20 sm:mt-20 mobile:mt-20 md:text-center sm:text-center mobile:text-center"
+          >
             <p class="text-xl text-white">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
               culpa provident, eum perspiciatis in impedit suscipit corrupti
               perferendis harum vero amet mollitia temporibus repudiandae
               ducimus quasi beatae consequatur similique nam.
             </p>
-            <h2 class="pt-2 text-xl text-black">
+            <h2 class="pt-4 text-xl text-black">
               Amara A. Kamara , CEO XYZ COMPANY
             </h2>
           </div>
         </div>
+        <!-- testimonial next button -->
         <div class="w-1/6 my-auto">
-          <a href="#" class="al next round">&#8250;</a>
+          <a href="#" class="al mr-10 next round">&#8250;</a>
         </div>
       </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
