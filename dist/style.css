@@ -146,6 +146,7 @@ h5 {
 /* Amara 👇👇*/
 
 .overlay-logo {
+  max-width: 50%;
   width: 60%;
   height: 60%;
   opacity: 30%;
