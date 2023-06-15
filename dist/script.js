@@ -27,10 +27,3 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(document.querySelectorAll("*"), function (el) {
-  if (el.offsetWidth > docWidth) {
-    alert(el.classList);
-  }
-});

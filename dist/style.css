@@ -4,8 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -273,4 +271,16 @@ h5 {
 }
 .submit-btn {
   width: 90%;
+}
+.mobile-logo {
+  width: 40%;
+}
+
+.services p {
+  font-size: 1.25rem;
+  display: block;
+}
+.quick-links a{
+  display: block;
+  font-size: 1.25rem;
 }
