@@ -17,7 +17,11 @@ h4,
 h5 {
   font-family: "Outfit", sans-serif;
 }
+.all-section {
+  padding: 10% 5%;
+}
 
+/*Header and home*/
 .header {
   position: relative;
   z-index: 2;
@@ -27,9 +31,6 @@ h5 {
 }
 .home-description {
   margin: 7% 0 0;
-}
-.all-section {
-  padding: 10% 5%;
 }
 
 .navbar {
@@ -104,16 +105,6 @@ h5 {
   }
 }
 
-@media (min-width: 1024px) {
-  .wel-img {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .wel-holder {
-    position: relative;
-  }
-}
 @media (min-width: 1340px) {
   .wel-img {
     position: static;
@@ -320,4 +311,19 @@ h5 {
 .quick-links a {
   display: block;
   font-size: 1.25rem;
+}
+
+/*Specific Media Queries*/
+@media (min-width: 1024px) {
+  .wel-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .wel-holder {
+    position: relative;
+  }
+  .overlay-logo {
+    height: auto;
+  }
 }
