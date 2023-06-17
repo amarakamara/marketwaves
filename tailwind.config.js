@@ -18,6 +18,7 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
       cs: "1024px",
+      sc:"1372px"
     },
     extend: {
       spacing: {

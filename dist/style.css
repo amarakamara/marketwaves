@@ -105,14 +105,7 @@ h5 {
   }
 }
 
-@media (min-width: 1340px) {
-  .wel-img {
-    position: static;
-  }
-  .wel-holder {
-    position: static;
-  }
-}
+
 
 @media (max-width: 640px) {
   .home-btn {
@@ -282,6 +275,7 @@ h5 {
   background: transparent;
   margin: 1.5% 0;
 }
+
 .form-el:focus {
   border-color: green;
   outline: 1px dotted #000;
@@ -314,7 +308,7 @@ h5 {
 }
 
 /*Specific Media Queries*/
-@media (min-width: 1024px) {
+@media (max-width: 1372px) {
   .wel-img {
     position: absolute;
     bottom: 0;
@@ -325,5 +319,23 @@ h5 {
   }
   .overlay-logo {
     height: auto;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 1025px) {
+  .wel-img {
+    position: static;
+    width: 80%;
+  }
+  .wel-holder {
+    position: static;
+  }
+}
+@media (min-width: 1024px) {
+  .wel-img {
+    position: static;
+  }
+  .wel-holder {
+    position: static;
   }
 }
