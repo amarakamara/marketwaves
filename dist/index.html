@@ -133,7 +133,7 @@
     </section>
     <!-- Who are we section start -->
     <section
-      class="all-section bg-gradient-to-b from-lightB to-greenColor bg-cover overflow-hidden"
+      class="all-section bg-gradient-to-b from-lightB to-greenColor bg-cover overflow-hidden relative"
     >
       <div
         class="container flex flex-col lg:flex-row md:mt-10 sm:mt-10 mobile:mt-10"
@@ -211,23 +211,31 @@
           </div>
         </div>
       </div>
+      <hr class="absolute right-0 bottom-0 w-36 h-1 bg-white" />
     </section>
 
     <!-- Who are we section end -->
     <!-- Our services start -->
 
-    <section class="our-services all-section bg-greenColor text-white">
-      <h2 class="section-title text-gold text-3xl pb-5">OUR SERVICES</h2>
+    <section class="our-services all-section bg-greenColor text-white relative">
+      <hr class="absolute left-0 lgtop-20 md:top-0 w-36 h-1 bg-white" />
+      <h2
+        class="section-title text-gold text-3xl pb-5 lg:mt-0 md:mt-10 sm:mt-10 mobile:mt-10"
+      >
+        OUR SERVICES
+      </h2>
       <p class="text-xl pr-96 md:pr-20 mobile:pr-0 mb-20">
         <span class="text-2xl text-bold text-gold">MarketWaves Media</span>
         offers a comprehensive suite of digital services to elevate your brand s
         online presence and drive success. Our services include:
       </p>
 
-      <div class="flex mt-20 justify-between lg:flex-row md:flex-col sm:flex-col mobile:flex-col">
+      <div
+        class="text-black flex mt-20 gap-4 lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
+      >
         <!-- Card 1 -->
         <div
-          class="card1 w-full max-w-sm bg-blend-saturation border border-white rounded-lg shadow md:w-full sm:w-full"
+          class="card1 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow md:w-full sm:w-full lg:mt-5 md:mt-0 sm:mt-0 mobile:mt-0"
         >
           <div class="w-full h-32">
             <img
@@ -238,7 +246,7 @@
           </div>
 
           <div class="p-4 sm:p-8">
-            <h2 class="text-3xl text-bold text-white">
+            <h2 class="text-3xl text-bold text-black">
               Social Media Marketing
             </h2>
             <hr class="my-5" />
@@ -333,7 +341,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta1-btn"
+              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -341,7 +349,7 @@
         </div>
         <!-- Card2 -->
         <div
-          class="card2 w-full max-w-sm bg-blend-saturation border border-white rounded-lg shadow md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
+          class="card2 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow lg:mt-0 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
         >
           <div class="w-full h-32">
             <img
@@ -352,7 +360,7 @@
           </div>
 
           <div class="p-4 sm:p-8">
-            <h2 class="text-3xl text-bold text-white">Branding</h2>
+            <h2 class="text-3xl text-bold">Branding</h2>
             <hr class="my-5" />
             <p>
               Establish a strong and compelling brand identity that resonates
@@ -446,7 +454,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta1-btn"
+              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -455,7 +463,7 @@
 
         <!-- Card 3 -->
         <div
-          class="card2 w-full max-w-sm bg-blend-saturation border border-white rounded-lg shadow md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
+          class="card2 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow lg:mt-5 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
         >
           <div class="w-full h-32">
             <img
@@ -466,9 +474,7 @@
           </div>
 
           <div class="p-4 sm:p-8">
-            <h2 class="text-3xl text-bold text-white">
-              Media Management
-            </h2>
+            <h2 class="text-3xl text-bold">Media Management</h2>
             <hr class="my-5" />
             <p>
               Let us handle the management of your social media platforms,
@@ -562,7 +568,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta1-btn"
+              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -574,7 +580,75 @@
     <!-- Our services end -->
     <!-- We are also good at start -->
 
-    <!-- Am gonno write code in here -->
+    <section
+      class="all-section bg-gradient-to-b from-greenColor to-black bg-cover overflow-hidden relative"
+    >
+      <div class="flex right-0 top-10 sm:top-0 absolute">
+        <hr class="w-36 h-1 bg-white my-auto sm:w-10" />
+        <h2 class="section-title text-gold text-3xl sm:text-xl my-auto mx-5">
+          WE ARE ALSO GOOD AT
+        </h2>
+        <hr class="w-36 h-1 bg-white my-auto sm:w-10" />
+      </div>
+
+      <div class="bg-green p-5">
+        <div class="flex flex-col">
+          <div
+            class="flex gap-1 lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
+          >
+            <div
+              class="text-center lg:w-1/2 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              style="
+                background-image: url(/images/images/other/seo-website-development-data-network-concept.jpg);
+              "
+            >
+              <h3 class="text-bold text-4xl">SEO/SEM</h3>
+              <p>Web Traffic</p>
+            </div>
+            <div
+              class="text-center lg:w-1/2 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              style="
+                background-image: url(/images/images/other/person-front-computer-working-html.jpg);
+              "
+            >
+              <h3 class="text-bold text-4xl">WEBSITE</h3>
+              <p>Design/Development</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-1 mt-1 lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
+          >
+            <div
+              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              style="
+                background-image: url(/images/images/other/pexels-jessica-lewis-creative-593324.jpg);
+              "
+            >
+              <h3 class="text-bold text-4xl">VIDEO EDITING</h3>
+              <p>Long-form/Short-form</p>
+            </div>
+            <div
+              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              style="
+                background-image: url(/images/images/other/marketing-strategy-planning-strategy-concept.jpg);
+              "
+            >
+              <h3 class="text-bold text-4xl">GRAPHIC</h3>
+              <p>Design</p>
+            </div>
+            <div
+              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              style="
+                background-image: url(/images/images/other/view-business-desk-assortment.jpg);
+              "
+            >
+              <h3 class="text-bold text-4xl">CONTENT</h3>
+              <p>Writing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- We are also good at end -->
 
