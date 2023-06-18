@@ -30,12 +30,31 @@ h5 {
 }
 
 /*Navbar before scroll*/
-.navbar {
+.old {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 10%;
+  z-index: 20;
+  background-color: transparent;
 }
 
+.old-nav {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 0 5%;
+  background-color: transparent;
+  width: 100%;
+}
+
+.old-links{
+  display: flex;
+  align-items: flex-end;
+  justify-items: flex-end;
+}
 .navbar-logo {
   flex: 0 0 auto;
 }
@@ -45,18 +64,26 @@ h5 {
   justify-content: center;
 }
 
-.nav-pad {
-  padding: 0 5%;
-}
-
 /*nav after scroll*/
 
-.new-nav {
+new-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: absolute;
+  flex-direction: column;
+  align-items: flex-end;
   width: 0;
   height: 0;
-  border-top: 100px solid #019267;
-  border-left: 100px solid transparent;
+  border-top: 3000px solid #019267;
+  border-left: 3000px solid transparent;
+  z-index: 20;
 }
+
+.new-navlinks {
+  flex-direction: column;
+}
+
 .toggle-btn {
   display: none;
   cursor: pointer;

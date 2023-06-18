@@ -1,20 +1,32 @@
-/* JavaScript for Toggle Button
-function toggleNavbar() {
-  let navbarLinks = document.querySelector(".navbar-links");
-  let toggleBtn = document.querySelector(".toggle-btn");
+//Variables
 
-  navbarLinks.classList.toggle("hidden");
-  toggleBtn.classList.toggle("active");
+const navbarLinks = $(".navbar-links");
+const toggleBtn = $(".toggle-btn");
+const navBar = $(".navbar");
+
+// JavaScript for Toggle Button
+function toggleNavbar() {
+  navbarLinks[0].classList.toggle("hidden");
+  toggleBtn[0].classList.toggle("active");
 }
+
+function changeNav() {
+  navBar[0].classList.toggle("old-navbar");
+  navBar[0].classList.toggle("new-navbar");
+}
+
 document.querySelector(".toggle-btn").addEventListener("click", function () {
   toggleNavbar();
+  changeNav();
 });
 
-*/ // slider
+// slider
+//
+//
+//
+//
 //Scroll for navbar
 $(document).ready(function () {
-  const navbarLinks = $(".navbar-links");
-  let toggleBtn = $(".toggle-btn");
   let landingScrollPosition;
 
   $(window).on("load", function () {
