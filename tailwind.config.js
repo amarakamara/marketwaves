@@ -18,13 +18,17 @@ module.exports = {
       xl: "1280px",
       "2xl": "1536px",
       cs: "1024px",
-      sc:"1372px"
+      sc: "1372px",
     },
     extend: {
       spacing: {
         120: "7.5rem",
         200: "12.5rem",
         300: "18.75rem",
+        100: "30rem",
+      },
+      backgroundColor: {
+        transparent: "transparent",
       },
     },
   },

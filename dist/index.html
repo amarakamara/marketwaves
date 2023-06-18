@@ -32,39 +32,8 @@
   </head>
 
   <!-- Body -->
-  <body>
+  <body class="relative">
     <section class="bg-img home">
-      <header class="header w-full">
-        <nav class="navbar w-full">
-          <div class="navbar-logo">
-            <a href="#"
-              ><img
-                src="/images/images/Logo/logo.png"
-                alt="Logo"
-                class="h-8 w-auto"
-            /></a>
-          </div>
-          <div class="navbar-links">
-            <a href="#" class="text-white mx-4">Home</a>
-            <a href="#" class="text-white mx-4">About Us</a>
-            <a href="#" class="text-white mx-4">Services</a>
-            <a href="#" class="text-white mx-4">Portfolio</a>
-            <a href="#" class="text-white mx-4">Contact Us</a>
-          </div>
-          <div class="book-consultation">
-            <a
-              href="#"
-              class="border border-gold text-white px-6 py-2 rounded-lg font-bold transition duration-300"
-              >Book A Consultation</a
-            >
-          </div>
-          <div class="toggle-btn">
-            <span></span>
-            <span class="midd"></span>
-            <span></span>
-          </div>
-        </nav>
-      </header>
       <section class="home-description">
         <div class="flex flex-col-reverse lg:flex-row justify-center h-full">
           <div
@@ -92,7 +61,7 @@
               >
               <a
                 href="#"
-                class="home-btn border border-gold text-white px-20 py-2 rounded-lg font-bold transition duration-300 bg-gold"
+                class="home-btn btn2 border border-gold text-white px-20 py-2 rounded-lg font-bold transition duration-300 bg-gold"
                 >GET STARTED!</a
               >
             </div>
@@ -131,6 +100,39 @@
         </div>
       </div>
     </section>
+    <header class="header m-0 p-0 fixed top-20 w-full z-10">
+      <nav
+        class="navbar flex items-center justify-between w-full nav-pad bg-transparent bg-opacity-50"
+      >
+        <div class="navbar-logo">
+          <a href="#">
+            <img
+              src="/images/images/Logo/logo.png"
+              alt="Logo"
+              class="h-8 w-auto"
+            />
+          </a>
+        </div>
+        <div class="navbar-links flex items-center">
+          <a href="#" class="text-white mx-4">Home</a>
+          <a href="#" class="text-white mx-4">About Us</a>
+          <a href="#" class="text-white mx-4">Services</a>
+          <a href="#" class="text-white mx-4">Portfolio</a>
+          <a href="#" class="text-white mx-4">Contact Us</a>
+          <a
+            href="#"
+            class="border border-gold text-white px-6 py-2 mx-4 rounded-lg font-bold transition duration-300"
+            >Book A Consultation</a
+          >
+        </div>
+        <div class="toggle-btn">
+          <span></span>
+          <span class="midd"></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
     <!-- Who are we section start -->
     <section
       class="all-section bg-gradient-to-b from-lightB to-greenColor bg-cover overflow-hidden relative"
@@ -583,67 +585,146 @@
     <section
       class="all-section bg-gradient-to-b from-greenColor to-black bg-cover overflow-hidden relative"
     >
-      <div class="flex right-0 top-10 sm:top-0 absolute">
-        <hr class="w-36 h-1 bg-white my-auto sm:w-10" />
-        <h2 class="section-title text-gold text-3xl sm:text-xl my-auto mx-5">
+      <div
+        class="flex right-0 lg:top-10 md:top-10 mobile:top-0 sm:top-0 absolute"
+      >
+        <hr class="w-36 md:w-36 h-1 bg-white my-auto sm:w-10 mobile:w-10" />
+        <h2
+          class="section-title text-gold lg:text-3xl md:text-3xl mobile:text-xl sm:text-xl my-auto mx-5"
+        >
           WE ARE ALSO GOOD AT
         </h2>
-        <hr class="w-36 h-1 bg-white my-auto sm:w-10" />
+        <hr class="lg:w-36 md:w-36 h-1 bg-white my-auto sm:w-10 mobile:w-10" />
       </div>
 
-      <div class="bg-green p-5">
+      <div class="bg-green p-5 h-auto">
         <div class="flex flex-col">
+          <!-- set 1 -->
+
           <div
             class="flex gap-1 lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
           >
+            <!-- card 1-set 2=1 -->
             <div
-              class="text-center lg:w-1/2 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              class="flip-card lg:w-1/2 h-96 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
               style="
                 background-image: url(/images/images/other/seo-website-development-data-network-concept.jpg);
               "
             >
-              <h3 class="text-bold text-4xl">SEO/SEM</h3>
-              <p>Web Traffic</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front text-center py-40">
+                  <h3 class="text-bold text-4xl">SEO/SEM</h3>
+                  <p>Web Traffic</p>
+                </div>
+                <div class="flip-card-back text-center py-40 bg-black">
+                  <div class="mx-auto my-auto">
+                    <h3 class="text-bold text-4xl">On-Page</h3>
+                    <h3 class="text-bold text-4xl">Off-Page</h3>
+                    <h3 class="text-bold text-4xl">Web Traffic</h3>
+                    <h3 class="text-bold text-4xl">Technical SEO</h3>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- card 2-set 1 -->
             <div
-              class="text-center lg:w-1/2 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              class="flip-card lg:w-1/2 h-96 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
               style="
                 background-image: url(/images/images/other/person-front-computer-working-html.jpg);
               "
             >
-              <h3 class="text-bold text-4xl">WEBSITE</h3>
-              <p>Design/Development</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front text-center py-40">
+                  <h3 class="text-bold text-4xl">WEBSITE</h3>
+                  <p>Development/Design</p>
+                </div>
+                <div class="flip-card-back text-center py-40 bg-black">
+                  <div class="mx-auto my-auto">
+                    <h3 class="text-bold text-4xl">Single Page</h3>
+                    <h3 class="text-bold text-4xl">Multipage Page</h3>
+                    <h3 class="text-bold text-4xl">e-Commerce</h3>
+                    <h3 class="text-bold text-4xl">Wix/Word Press</h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- set 2 -->
           <div
             class="flex gap-1 mt-1 lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
           >
+            <!-- card 1-set 2 -->
             <div
-              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              class="flip-card lg:w-1/3 h-96 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
               style="
                 background-image: url(/images/images/other/pexels-jessica-lewis-creative-593324.jpg);
               "
             >
-              <h3 class="text-bold text-4xl">VIDEO EDITING</h3>
-              <p>Long-form/Short-form</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front text-center py-40">
+                  <h3 class="text-bold text-4xl">VIDEO</h3>
+                  <p>Editing</p>
+                </div>
+
+                <div class="flip-card-back text-center py-40 bg-black">
+                  <div class="mx-auto my-auto">
+                    <h3 class="text-bold text-4xl">Short-Form</h3>
+                    <h3 class="text-bold text-4xl">Long-Form</h3>
+                    <h3 class="text-bold text-4xl">Podcast</h3>
+                    <h3 class="text-bold text-4xl">Adverts</h3>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- card 2-set 2 -->
+
             <div
-              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              class="flip-card lg:w-1/3 h-96 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
               style="
                 background-image: url(/images/images/other/marketing-strategy-planning-strategy-concept.jpg);
               "
             >
-              <h3 class="text-bold text-4xl">GRAPHIC</h3>
-              <p>Design</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front text-center py-40">
+                  <h3 class="text-bold text-4xl">GRAPHIC</h3>
+                  <p>Design</p>
+                </div>
+
+                <div class="flip-card-back text-center py-40 bg-black">
+                  <div class="mx-auto my-auto">
+                    <h3 class="text-bold text-4xl">Thumbnails</h3>
+                    <h3 class="text-bold text-4xl">Logo</h3>
+                    <h3 class="text-bold text-4xl">Flyer</h3>
+                    <h3 class="text-bold text-4xl">Ad Design</h3>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- card 3-set 2 -->
+
             <div
-              class="text-center lg:w-1/3 py-40 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
+              class="flip-card lg:w-1/3 h-96 bg-cover filter grayscale bg-img md:w-full sm:w-full mobile:w-full"
               style="
                 background-image: url(/images/images/other/view-business-desk-assortment.jpg);
               "
             >
-              <h3 class="text-bold text-4xl">CONTENT</h3>
-              <p>Writing</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front text-center py-40">
+                  <h3 class="text-bold text-4xl">CONTENT</h3>
+                  <p>Writing</p>
+                </div>
+
+                <div class="flip-card-back text-center pt-40 pb-40 bg-black">
+                  <div class="mx-auto my-auto">
+                    <h3 class="text-bold text-4xl">Social Media Post</h3>
+                    <h3 class="text-bold text-4xl">Blog</h3>
+                    <h3 class="text-bold text-4xl">Emails</h3>
+                    <h3 class="text-bold text-4xl">Script</h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -836,7 +917,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div
-            class="bg-gold rounded-2xl py-48 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
+            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -867,7 +948,7 @@
           </div>
           <!-- Slide 2        -->
           <div
-            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
+            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -899,7 +980,7 @@
 
           <!-- Slide 3        -->
           <div
-            class="bg-gold rounded-2xl py-56 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
+            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -945,9 +1026,9 @@
         growing your business."
       </h2>
       <button
-        class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta2-btn"
+        class="border border-gold text-white text-xl lg:px-20 md:px-20 sm:px-10 mobile:px-10 py-4 rounded-lg font-bold transition duration-300 bg-gold cta2-btn"
       >
-        BOOK AN APPOINTMENT
+        BOOK APPOINTMENT
       </button>
     </section>
     <!-- cta3 end -->
@@ -1024,63 +1105,81 @@
         </div>
         <div class="mid-div sc:w-1/4 md:w-0 sm:w-0 mobile:w-0 lg:w-1/4"></div>
 
-        <!-- Contacts -->
+        <!-- Contacts/mobile Logo -->
         <div
-          class="contact-info lg:w-1/4 lg:flex-none md:flex md:flex-row-reverse sm:flex sm:flex-row-reverse mobile:flex mobile:flex-row-reverse lg:relative md:static sm:static mobile:static"
+          class="contact-info lg:w-1/4 lg:flex-none md:flex md:flex-col sm:flex sm:flex-col mobile:flex mobile:flex-col lg:relative md:static sm:static mobile:static"
         >
-          <div class="lg:w-auto md:w-1/2 sm:w-1/2 mobile:w-1/2">
-            <h2 class="text-xl text-gold">Call us:</h2>
-            <p class="mt-5 text-xl block">91 8951449006</p>
-            <p class="text-xl inline">231 777643057</p>
-            <h2 class="text-xl mt-10 text-gold">Email Us:</h2>
-            <p
-              class="text-xl mt-5 lg:break-all md:break-keep sm:break-keep mobile:break-all inline"
-            >
-              info@marketwavesmedia.com
-            </p>
-          </div>
-
-          <!-- Socials -->
           <div
-            class="socials lg:absolute lg:bottom-0 md:static sm:static mobile:static lg:w-auto md:w-1/2 sm:w-1/2 mobile:w-1/2"
+            class="lg:flex-none md:flex sm:flex mobile:flex md:flex-row sm:flex-row mobile:flex-row md:static sm:static mobile:static lg:w-auto md:w-full sm:w-full mobile:w-full"
           >
             <!-- Logo on mobile -->
-            <div class="larger-logo2">
+            <div
+              class="larger-logo2 w-1/2 lg:hidden md:inline sm:inline mobile:inline"
+            >
               <img
-                class="mobile-logo grow-0 mobile:mb-20 lg:mb-0 md:mb-0 sm:mb-0 lg:hidden md:inline sm:inline mobile:inline"
+                class="mobile-logo object-cover shrink-0 lg:hidden md:inline sm:inline mobile:inline"
                 src="/images/images/Logo/logo.png"
                 alt="logo"
               />
             </div>
-
-            <!-- Social medias icons -->
-            <div class="flex flex-row">
-              <a href="###"
-                ><i
-                  class="fa-brands fa-facebook-f mr-5 lg:text-4xl md:text-4xl sm:text-4xl inline mobile:text-sm"
-                ></i
-              ></a>
-              <a href="###"
-                ><i
-                  class="fa-brands fa-twitter mr-5 ml-0 lg:text-4xl md:text-4xl sm:text-4xl inline mobile:text-sm"
-                ></i
-              ></a>
-              <a href="###"
-                ><i
-                  class="fa-brands fa-linkedin mr-5 lg:text-4xl md:text-4xl sm:text-4xl inline mobile:text-sm"
-                ></i
-              ></a>
-              <a href="###"
-                ><i
-                  class="fa-brands fa-tiktok mr-5 lg:text-4xl md:text-4xl sm:text-4xl inline mobile:text-sm"
-                ></i
-              ></a>
-              <a href="###"
-                ><i
-                  class="fa-brands fa-instagram mr-5 lg:text-4xl md:text-4xl sm:text-4xl inline mobile:text-sm"
-                ></i
-              ></a>
+            <!-- Contact info -->
+            <div class="lg:w-full md:w-1/2 sm:w-1/2 mobile:w-1/2">
+              <h2
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl text-gold"
+              >
+                Call us:
+              </h2>
+              <p
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-5 block"
+              >
+                91 8951449006
+              </p>
+              <p
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl inline"
+              >
+                231 777643057
+              </p>
+              <h2
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-10 text-gold"
+              >
+                Email Us:
+              </h2>
+              <p
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-5 lg:break-all md:break-keep sm:break-keep mobile:break-all inline"
+              >
+                info@marketwavesmedia.com
+              </p>
             </div>
+          </div>
+          <!-- Social medias icons -->
+          <div
+            class="flex flex-row lg:absolute lg:bottom-0 lg:right-0 md:static sm:static mobile:static md:mt-10 sm:mt-10 mobile:mt-10 lg:mt-0 lg:w-auto md:w-full sm:w-full mobile:w-full"
+          >
+            <a href="###"
+              ><i
+                class="fa-brands fa-facebook-f mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-twitter mr-10 mobile:mr-6 ml-0 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-linkedin mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-tiktok mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-instagram text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
           </div>
         </div>
       </div>
