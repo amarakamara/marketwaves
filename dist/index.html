@@ -33,38 +33,67 @@
 
   <!-- Body -->
   <body class="relative">
-    <header class="header m-0 p-0 w-full">
-      <div class="old">
-        <nav class="navbar old-nav">
-          <div class="navbar-logo">
-            <a href="#">
-              <img
-                src="/images/images/Logo/logo.png"
-                alt="Logo"
-                class="h-8 w-auto"
-              />
-            </a>
+    <header class="header">
+      <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-btn">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Home</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Book A Consultation</a>
+          <div class="flex flex-row justify-center items-center mt-10">
+            <a href="###"
+              ><i
+                class="fa-brands fa-facebook-f mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-twitter mr-10 mobile:mr-6 ml-0 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-linkedin mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-tiktok mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-instagram text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
           </div>
-          <div class="navbar-links">
-            <a href="#" class="text-white mx-4">Home</a>
-            <a href="#" class="text-white mx-4">About Us</a>
-            <a href="#" class="text-white mx-4">Services</a>
-            <a href="#" class="text-white mx-4">Portfolio</a>
-            <a href="#" class="text-white mx-4">Contact Us</a>
-            <a
-              href="#"
-              class="border border-gold text-white px-6 py-2 mx-4 rounded-lg font-bold transition duration-300"
-              >Book A Consultation</a
-            >
-          </div>
-          <div class="toggle-btn">
-            <span></span>
-            <span class="midd"></span>
-            <span></span>
-          </div>
-        </nav>
+        </div>
+      </nav>
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <div
+        class="nav-top flex flex-row fixed top-10 z-10 px-10 items-center w-full"
+      >
+        <div class="navbar-logo">
+          <a href="#">
+            <img
+              src="/images/images/Logo/logo.png"
+              alt="Logo"
+              class="h-10 w-auto"
+            />
+          </a>
+        </div>
+        <div class="OpenDiv justify-end ml-auto">
+          <span class="open-btn cursor-pointer text-4xl bg-black">&#9776;</span>
+        </div>
       </div>
     </header>
+
     <section class="bg-img home">
       <section class="home-description">
         <div class="flex flex-col-reverse lg:flex-row justify-center h-full">
