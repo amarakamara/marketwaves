@@ -1,4 +1,4 @@
-//Variables
+//Navbar
 $(document).ready(function () {
   const closeBtn = $(".close-btn");
   const openBtn = $(".open-btn");
@@ -15,72 +15,46 @@ $(document).ready(function () {
   closeBtn.on("click", closeNav);
   openBtn.on("click", openNav);
 });
+//Smooth Scroll
 
-/*
-const navbarLinks = $(".navbar-links");
-const toggleBtn = $(".toggle-btn");
-const navBar = $(".navbar");
-const navDiv = $(".nav-container");
-navItems = $(".nav-items");
+//nav links
+$(".overlay-content a").on("click", function (e) {
+  e.preventDefault();
 
-// JavaScript for Toggle Button
-function toggleNavbar() {
-  navbarLinks[0].classList.toggle("active");
-  toggleBtn[0].classList.toggle("active");
-}
+  const href = $(this).attr("href");
 
-function changeNav() {
-  navbarLinks[0].style.display = "block";
-  //chanege container
-  navDiv[0].classList.toggle("old");
-  navDiv[0].classList.toggle("new");
+  $("html, body").animate({ scrollTop: $(href).offset().top }, 1000);
+});
 
-  //chanege navbar
-  navBar[0].classList.toggle("old-nav");
-  navBar[0].classList.toggle("new-nav");
+//footer links
+$(".quick-links a").on("click", function (e) {
+  e.preventDefault();
 
-  //chanege navLinks
-  navbarLinks[0].classList.toggle("old-links");
-  navbarLinks[0].classList.toggle("new-links");
+  const href = $(this).attr("href");
 
-  //change nav items
-  for (let i = 0; i < navItems.length; i++) {
-    navItems[i].classList.toggle("inline");
-    navItems[i].classList.toggle("block");
+  $("html, body").animate({ scrollTop: $(href).offset().top }, 1000);
+});
+
+//reveal
+function reveal() {
+  let reveals = $(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 0;
+
+    if (elementTop < windowHeight - elementVisible) {
+      $(reveals[i]).addClass("active"); // Wrap DOM element with $() to create a jQuery object
+    } else {
+      $(reveals[i]).removeClass("active"); // Wrap DOM element with $() to create a jQuery object
+    }
   }
 }
 
-document.querySelector(".toggle-btn").addEventListener("click", function () {
-  toggleNavbar();
-  changeNav();
-});
+$(window).scroll(reveal);
 
-// slider
-//
-//
-//
-//
-//Scroll for navbar
-$(document).ready(function () {
-  let landingScrollPosition;
-
-  $(window).on("load", function () {
-    landingScrollPosition = $(this).scrollTop();
-  });
-
-  $(window).scroll(function () {
-    const currentScrollPosition = $(this).scrollTop();
-
-    if (currentScrollPosition > landingScrollPosition) {
-      navbarLinks[0].style.display = "none";
-      toggleBtn[0].style.display = "block";
-    } else if (Math.abs(currentScrollPosition - landingScrollPosition) <= 1) {
-      navbarLinks[0].style.display = "block";
-      toggleBtn[0].style.display = "none";
-    }
-  });
-});
-*/
+//Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,

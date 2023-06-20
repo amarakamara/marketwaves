@@ -1,13 +1,17 @@
 html {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
+}
+
+p,
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -54,7 +58,8 @@ h5 {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-family: "Outfit", sans-serif;
+  font-size: 32px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -315,6 +320,30 @@ h5 {
   background-color: black;
   color: white;
   transform: rotateY(180deg);
+}
+/*Slider*/
+.slide-track {
+  animation: scroll 20s linear infinite;
+  width: calc(250px * 14);
+}
+
+.slideIt {
+  height: 100px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.slideIt img {
+  width: 50%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 /*Specific Media Queries*/

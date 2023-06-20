@@ -40,11 +40,12 @@
 
         <!-- Overlay content -->
         <div class="overlay-content">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">Services</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact Us</a>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact Us</a>
           <a href="#">Book A Consultation</a>
           <div class="flex flex-row justify-center items-center mt-10">
             <a href="###"
@@ -75,12 +76,11 @@
           </div>
         </div>
       </nav>
-      <!-- Use any element to open/show the overlay navigation menu -->
       <div
-        class="nav-top flex flex-row fixed top-10 z-10 px-10 items-center w-full"
+        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full"
       >
         <div class="navbar-logo">
-          <a href="#">
+          <a href="#home">
             <img
               src="/images/images/Logo/logo.png"
               alt="Logo"
@@ -89,12 +89,15 @@
           </a>
         </div>
         <div class="OpenDiv justify-end ml-auto">
-          <span class="open-btn cursor-pointer text-4xl bg-black">&#9776;</span>
+          <span
+            class="open-btn lg:px-2 md:px-1 sm:px-1 mobile:px-1 cursor-pointer lg:text-4xl md:text-2xl sm:text-2xl mobile:text-2xl bg-black"
+            >&#9776;</span
+          >
         </div>
       </div>
     </header>
 
-    <section class="bg-img home">
+    <section class="bg-img home" id="home">
       <section class="home-description">
         <div class="flex flex-col-reverse lg:flex-row justify-center h-full">
           <div
@@ -117,12 +120,12 @@
             <div class="flex justify-center lg:justify-start space-x-8 my-24">
               <a
                 href="#"
-                class="home-btn home-btn1 border border-gold text-white px-6 py-2 rounded-lg font-bold transition duration-300"
+                class="home-btn home-btn1 border border-gold text-white px-6 py-2 font-bold transition duration-300"
                 >BOOK A CONSULTATION</a
               >
               <a
                 href="#"
-                class="home-btn btn2 border border-gold text-white px-20 py-2 rounded-lg font-bold transition duration-300 bg-gold"
+                class="home-btn btn2 border border-gold text-white px-20 py-2 font-bold transition duration-300 bg-gold"
                 >GET STARTED!</a
               >
             </div>
@@ -136,28 +139,39 @@
           </div>
         </div>
       </section>
-      <div class="flex rounded-lg w-full h-24 bg-white overflow-hidden">
-        <div class="flex flex-row mx-auto">
-          <img
-            class="w-16 mx-10"
-            src="/images/images/Logo/logo.png"
-            alt="logo"
-          />
-          <img
-            class="w-16 mx-10"
-            src="/images/images/Logo/logo.png"
-            alt="logo"
-          />
-          <img
-            class="w-16 mx-10"
-            src="/images/images/Logo/logo.png"
-            alt="logo"
-          />
-          <img
-            class="w-16 mx-10"
-            src="/images/images/Logo/logo.png"
-            alt="logo"
-          />
+      <div class="w-full h-24 bg-white overflow-hidden relative slideX">
+        <div class="flex mx-auto slide-track">
+          <div class="mx-10 slideIt">
+            <img
+              class="w-20 m-auto"
+              src="/images/images/Logo/Orange-Liberia_logo.png"
+              alt="logo"
+            />
+          </div>
+          <div class="mx-10 slideIt">
+            <img
+              class="m-auto"
+              src="/images/images/Logo/don bosco.jpg"
+              alt="logo"
+            />
+          </div>
+          <div class="mx-10 slideIt">
+            <img
+              class="m-auto"
+              src="/images/images/Logo/secret.png"
+              alt="logo"
+            />
+          </div>
+          <div class="mx-10 slideIt">
+            <img class="m-auto" src="/images/images/Logo/spa.jpg" alt="logo" />
+          </div>
+          <div class="mx-10 slideIt">
+            <img
+              class="m-auto mb-20"
+              src="/images/images/Logo/zara.png"
+              alt="logo"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -165,11 +179,14 @@
     <!-- Who are we section start -->
     <section
       class="all-section bg-gradient-to-b from-lightB to-greenColor bg-cover overflow-hidden relative"
+      id="about"
     >
       <div
         class="container flex flex-col lg:flex-row md:mt-10 sm:mt-10 mobile:mt-10"
       >
-        <div class="lg:w-1/2 flex bg-cover bg-center relative overflow-hidden">
+        <div
+          class="lg:w-1/2 flex bg-cover bg-center relative overflow-hidden reveal"
+        >
           <div class="overlay-container">
             <img
               class="overlay-logo"
@@ -182,27 +199,27 @@
             <img
               src="/images/images/about us/amara.jpg"
               alt="Image 1"
-              class="w-full h-auto object-contain rounded-lg"
+              class="w-full h-auto object-contain"
             />
             <img
               src="/images/images/about us/bango.jpg"
               alt="Image 2"
-              class="w-full h-auto object-contain rounded-lg"
+              class="w-full h-auto object-contain"
             />
             <img
               src="/images/images/about us/layee.jpg"
               alt="Image 3"
-              class="w-full h-auto object-contain rounded-lg"
+              class="w-full h-auto object-contain"
             />
             <img
               src="/images/images/about us/sheikh.jpg"
               alt="Image 4"
-              class="w-full h-auto object-contain rounded-lg"
+              class="w-full h-auto object-contain"
             />
             <img
               src="/images/images/about us/Solo.jpg"
               alt="Image 5"
-              class="w-full h-auto object-contain rounded-lg"
+              class="w-full h-auto object-contain"
             />
             <div class="relative">
               <div
@@ -218,7 +235,7 @@
           </div>
         </div>
         <div
-          class="lg:w-1/2 lg:ml-14 md:ml-0 md:mt-20 sm:mt-20 mobile:mt-20 py-4 items-center"
+          class="lg:w-1/2 lg:ml-14 md:ml-0 md:mt-20 sm:mt-20 mobile:mt-20 py-4 items-center reveal"
         >
           <div>
             <h2 class="text-3xl text-gold font-bold mb-6">Who are we?</h2>
@@ -248,7 +265,10 @@
     <!-- Who are we section end -->
     <!-- Our services start -->
 
-    <section class="our-services all-section bg-greenColor text-white relative">
+    <section
+      class="our-services all-section bg-greenColor text-white relative"
+      id="service"
+    >
       <hr class="absolute left-0 lgtop-20 md:top-0 w-36 h-1 bg-white" />
       <h2
         class="section-title text-gold text-3xl pb-5 lg:mt-0 md:mt-10 sm:mt-10 mobile:mt-10"
@@ -266,7 +286,7 @@
       >
         <!-- Card 1 -->
         <div
-          class="card1 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow md:w-full sm:w-full lg:mt-5 md:mt-0 sm:mt-0 mobile:mt-0"
+          class="card1 bg-green w-full bg-blend-saturation border border-white shadow md:w-full sm:w-full lg:mt-5 md:mt-0 sm:mt-0 mobile:mt-0 reveal"
         >
           <div class="w-full h-32">
             <img
@@ -372,7 +392,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
+              class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -380,7 +400,7 @@
         </div>
         <!-- Card2 -->
         <div
-          class="card2 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow lg:mt-0 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
+          class="card2 bg-green w-full bg-blend-saturation border border-white shadow lg:mt-0 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full reveal"
         >
           <div class="w-full h-32">
             <img
@@ -485,7 +505,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
+              class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -494,7 +514,7 @@
 
         <!-- Card 3 -->
         <div
-          class="card2 bg-green w-full bg-blend-saturation border border-white rounded-lg shadow lg:mt-5 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full"
+          class="card3 bg-green w-full bg-blend-saturation border border-white shadow lg:mt-5 md:mt-5 sm:mt-5 mobile:mt-5 md:w-full sm:w-full reveal"
         >
           <div class="w-full h-32">
             <img
@@ -599,7 +619,7 @@
               </li>
             </ul>
             <button
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold w-full"
+              class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold w-full"
             >
               REQUEST A QUOTE
             </button>
@@ -769,7 +789,7 @@
         today and unlock the potential of your brand!"
       </h2>
       <button
-        class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta1-btn"
+        class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold cta1-btn"
       >
         GET STARTED TODAY
       </button>
@@ -782,10 +802,10 @@
       <h2 class="section-title text-gold text-3xl pb-10">Why choose us?</h2>
       <div class="flex flex-col">
         <div
-          class="flex align-middle lg:px-36 sc:px-80 sm:px-0 py-10 md:flex-row mobile:flex-col"
+          class="flex align-middle lg:px-36 sc:px-80 sm:px-0 py-10 md:flex-row mobile:flex-col fade-in"
         >
           <img
-            class="item-img img1 lg:w-60 md:w-60 object-cover rounded-lg mobile:w-full"
+            class="item-img img1 lg:w-60 md:w-60 object-cover mobile:w-full"
             src="/images/images/why us/badge.jpg"
             alt="image"
           />
@@ -800,9 +820,11 @@
           </p>
         </div>
         <div class="flex lg:flex-row sm:flex-col mobile:flex-col">
-          <div class="flex py-10 lg:pr-10 sm:pr-0 md:flex-row mobile:flex-col">
+          <div
+            class="flex py-10 lg:pr-10 sm:pr-0 md:flex-row mobile:flex-col fade-in"
+          >
             <img
-              class="item-img lg:w-4/12 md:w-4/12 object-cover rounded-lg mobile:w-full"
+              class="item-img lg:w-4/12 md:w-4/12 object-cover mobile:w-full"
               src="/images/images/why us/7814525.jpg"
               alt="image"
             />
@@ -816,9 +838,11 @@
               competitive marketplace.
             </p>
           </div>
-          <div class="flex py-10 lg:pl-10 sm:pl-0 md:flex-row mobile:flex-col">
+          <div
+            class="flex py-10 lg:pl-10 sm:pl-0 md:flex-row mobile:flex-col fade-in"
+          >
             <img
-              class="item-img lg:w-4/12 md:w-4/12 object-cover rounded-lg mobile:w-full"
+              class="item-img lg:w-4/12 md:w-4/12 object-cover mobile:w-full"
               src="/images/images/why us/m003t0635_e_business_growth_research_analyze_06oct_22.jpg"
               alt="image"
             />
@@ -849,7 +873,7 @@
         clients!"
       </h2>
       <button
-        class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold cta2-btn"
+        class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold cta2-btn"
       >
         VIEW CASE STUDIES
       </button>
@@ -857,7 +881,7 @@
     <!-- cta2 end -->
 
     <!-- Work section -->
-    <section class="our-work all-section bg-black text-white">
+    <section class="our-work all-section bg-black text-white" id="work">
       <h2 class="section-title text-gold text-3xl pb-5">OUR WORK</h2>
       <p class="text-xl pr-96 md:pr-20 mobile:pr-0 mb-20">
         Check out some of our successful projects and see how we ve helped
@@ -933,6 +957,7 @@
     <!-- Testimonial -->
     <section
       class="testimonial-section all-section bg-white text-center text-black"
+      id="testimonial"
     >
       <i class="fa-sharp fa-solid fa-quote-left q-left"></i>
       <h2
@@ -946,7 +971,7 @@
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div
-            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
+            class="bg-gold py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -977,7 +1002,7 @@
           </div>
           <!-- Slide 2        -->
           <div
-            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
+            class="bg-gold py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -1009,7 +1034,7 @@
 
           <!-- Slide 3        -->
           <div
-            class="bg-gold rounded-2xl py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
+            class="bg-gold py-32 flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col mx-auto slider swiper-slide"
           >
             <div
               class="py-auto lg:mx-left md:mx-auto sm:mx-auto mobile:mx-auto lg:mr-10"
@@ -1055,7 +1080,7 @@
         growing your business."
       </h2>
       <button
-        class="border border-gold text-white text-xl lg:px-20 md:px-20 sm:px-10 mobile:px-10 py-4 rounded-lg font-bold transition duration-300 bg-gold cta2-btn"
+        class="border border-gold text-white text-xl lg:px-20 md:px-20 sm:px-10 mobile:px-10 py-4 font-bold transition duration-300 bg-gold cta2-btn"
       >
         BOOK APPOINTMENT
       </button>
@@ -1063,7 +1088,7 @@
     <!-- cta3 end -->
     <!-- Contact Us section -->
 
-    <section class="all-section contact-bg">
+    <section class="all-section contact-bg" id="contact">
       <div class="contact-head flex flex-row mb-20">
         <div class="contact-description">
           <h2
@@ -1121,12 +1146,12 @@
               id="message"
               cols="30"
               rows="6"
-              class="message rounded-lg"
+              class="message"
             ></textarea
             ><br />
             <button
               type="submit"
-              class="border border-gold text-white px-20 py-4 rounded-lg font-bold transition duration-300 bg-gold submit-btn"
+              class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold submit-btn"
             >
               GET IN TOUCH
             </button>
@@ -1266,12 +1291,12 @@
           >
             QUICK LINKS
           </h2>
-          <a href="###">Home</a>
-          <a href="###">About Us</a>
-          <a href="###">Services</a>
-          <a href="###">Why Choose Us?</a>
-          <a href="###">Portfolio</a>
-          <a href="###">Testimonial</a>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
       <hr class="mt-20" />
