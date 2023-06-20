@@ -189,6 +189,33 @@ h5 {
 .our-work {
   background-color: #000;
 }
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem; /* Adjust the gap value as per your preference */
+}
+
+.flex-child {
+  flex-basis: 25%; /* Default to four columns */
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-child {
+    flex-basis: 48%; /* Two columns on screens between 640px and 1024px */
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 640px) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-child {
+    flex-basis: 46%; /* Two columns on screens between 640px and 1024px */
+  }
+}
 
 /*Testimonial Image*/
 .testimonial-container {
@@ -288,6 +315,10 @@ h5 {
 .quick-links a {
   display: block;
   font-size: 1.25rem;
+}
+
+.quick-links a:hover {
+color: #d8ba75;
 }
 
 /*We are Also Good At**/
