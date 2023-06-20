@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment/Quote</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/dist/images/Logo/logo.png"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="/dist/swiperCSS.css" />
+
+    <!-- Tailwind output.css link -->
+    <link rel="stylesheet" href="output.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="relative">
+    <header class="header">
+      <nav id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-btn">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#">Book A Consultation</a>
+          <div class="flex flex-row justify-center items-center mt-10">
+            <a href="###"
+              ><i
+                class="fa-brands fa-facebook-f mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-twitter mr-10 mobile:mr-6 ml-0 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-linkedin mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-tiktok mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-instagram text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full"
+      >
+        <div class="navbar-logo">
+          <a href="#home">
+            <img
+              src="/dist/images/Logo/logo.png"
+              alt="Logo"
+              class="h-10 w-auto"
+            />
+          </a>
+        </div>
+        <div class="OpenDiv justify-end ml-auto">
+          <span
+            class="open-btn lg:px-2 md:px-1 sm:px-1 mobile:px-1 cursor-pointer lg:text-4xl md:text-2xl sm:text-2xl mobile:text-2xl bg-black"
+            >&#9776;</span
+          >
+        </div>
+      </div>
+    </header>
+    <!-- home -->
+    <section class="all-section">
+      <div
+        class="book-description absolute w-50 bg-gradient-to-r from-black to-transparent"
+      >
+        <div class="my-auto">
+          <h1 class="text-5xl lg:text-8xl font-bold text-white">
+            MarketWaves Media
+          </h1>
+          <h3 class="text-lg text-gold">Your Partner in Digital Success</h3>
+          <p
+            class="text-lg lg:text-2xl text-white mt-16 mb-14 lg:pr-64 md:pr-0"
+          >
+            Unleash your online potential with effective
+            <span class="text-greenColor font-bold">digital solutions</span>.
+            Boost brand impact and business growth through our customized
+            services.
+          </p>
+        </div>
+      </div>
+      <div class="video-container">
+        <video width="70%" height="auto" class="home-vid ml-auto" controls>
+          <source src="/dist/video/home-vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <section class="all-section booking-forms text-black">
+      <div>
+        <div>
+          <button>REQUEST A QUOTE</button>
+        </div>
+        <div>
+          <button>BOOK AN APPOINTMENT</button>
+        </div>
+      </div>
+      <!-- Appointment -->
+      <div>
+        <div class="form-image">
+          <img src="/dist/images/Landing/background.jpg" alt="" />
+        </div>
+        <div class="appointment">
+          <h2>Book An Appointment Online. Let’s Talk About Growth</h2>
+          <p>
+            Unleash your online potential with effective digital solutions. We
+            have professionals awaiting to chat with you and resolve your issues
+          </p>
+          <form action="">
+            <input
+              type="checkbox"
+              id="service1"
+              name="service1"
+              value="Social Media marketing"
+            />
+            <label for="service11"> Social Media Marketing</label><br />
+            <input
+              type="checkbox"
+              id="service2"
+              name="service2"
+              value="Social Media Management"
+            />
+            <label for="service2"> Social Media Management</label><br />
+            <input
+              type="checkbox"
+              id="service3"
+              name="service3"
+              value="Branding"
+            />
+            <label for="service3"> Branding</label><br />
+            <input type="checkbox" id="service4" name="service4" value="Web" />
+            <label for="service4"> Web Development</label><br />
+
+            <input
+              type="checkbox"
+              id="service5"
+              name="service5"
+              value="Video Editing"
+            />
+            <label for="service4"> Video Editing</label><br />
+            <input
+              type="checkbox"
+              id="service6"
+              name="service6"
+              value="Graphic Design"
+            />
+            <label for="service4"> Graphic Design</label><br />
+            <input type="checkbox" id="service7" name="service7" value="SEO" />
+            <label for="service4"> SEO/SEM</label><br />
+            <h3>Company Info (If Applicable):</h3>
+            <input
+              type="text"
+              placeholder="Company name:"
+              name="company-name"
+            />
+            <input
+              type="text"
+              placeholder="Company name:"
+              name="company-website"
+            />
+            <iframe
+              src="https://koalendar.com/e/consult-with-marketwaves-media?embed=true"
+              width="100%"
+              height="800px"
+              frameborder="0"
+            ></iframe>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="quote"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="all-section bg-black">
+      <div class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col">
+        <div
+          class="description lg:w-1/2 md:w-full sm:w-full mobile:w-full lg:mr-10 md:mr-0 sm:mr-0 mobile:mr-0"
+        >
+          <a class="py-0 flex items-center" href="#home">
+            <img
+              class="sm:w-9 md:w-10 lg:w-10 mobile:w-5"
+              src="/dist/images/Logo/logo.png"
+              alt="logo"
+            />
+            <h2
+              class="ml-4 mt-0 pt-0 mobile:text-3xl sm:text-4xl md:text-5xl lg:text-5xl sc:text-4xl text-gold font-bold brand-name"
+            >
+              MarketWaves Media
+            </h2>
+          </a>
+          <h3
+            class="lg:text-2xl md:text-2xl text-gold sm:text-xl mobile:text-xl"
+          >
+            Your Partner in Digital Success
+          </h3>
+          <p class="text-xl mt-10 pr-32 md:pr-0 sm:pr-0 mobile:pr-0">
+            MarketWaves Media Your Partner in Digital Success! We are ready to
+            serve with our premium services tailored to the growth of your
+            business. We are a team of vibrant young minds that are also
+            innovators and like to take up challenges. Give us a chance now!
+          </p>
+        </div>
+
+        <div
+          class="services lg:w-1/3 md:w-full sm:w-full mobile:w-full lg:mt-0 md:mt-10 sm:mt-10 mobile:mt-10 lg:mr-10 md:mr-0 sm:mr-0 mobile:mr-0"
+        >
+          <h2
+            class="text-bold text-gold text-4xl block lg:mb-6 md:mb-4 sm:mb-4 mobile:mb-4"
+          >
+            SERVICES
+          </h2>
+          <p>Social Media Management</p>
+          <p>Social Media marketing</p>
+          <p>Branding</p>
+          <p>graphic Design</p>
+          <p>SEO/SEM</p>
+          <p>Video Editing</p>
+        </div>
+        <div
+          class="quick-links lg:w-1/3 md:w-full sm:w-full mobile:w-full lg:mt-0 md:mt-10 sm:mt-10 mobile:mt-10"
+        >
+          <h2
+            class="text-bold text-gold text-4xl block lg:mb-6 md:mb-4 sm:mb-4 mobile:mb-4"
+          >
+            QUICK LINKS
+          </h2>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <hr class="mt-20" />
+      <div class="mt-2">
+        <i class="fa-regular fa-copyright mr-2"></i>
+        <p class="inline">marketWaves Media</p>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- swiper JS -->
+    <script src="/dist/swiperJS.js"></script>
+    <!-- Javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
