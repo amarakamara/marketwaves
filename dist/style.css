@@ -196,7 +196,20 @@ h5 {
 }
 
 .flex-child {
-  flex-basis: 25%; /* Default to four columns */
+  flex-basis: 25%;
+  position: relative;
+  width: 400px;
+  height: 350px; /* Default to four columns */
+}
+
+.flex-child img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (min-width: 640px) and (max-width: 1024px) {
@@ -204,7 +217,8 @@ h5 {
     flex-wrap: wrap;
   }
   .flex-child {
-    flex-basis: 48%; /* Two columns on screens between 640px and 1024px */
+    flex-basis: 48%;
+    /* Two columns on screens between 640px and 1024px */
   }
 }
 
@@ -260,7 +274,7 @@ h5 {
 .contact-bg {
   position: relative;
   z-index: 1;
-  background-image: url("/images/images/contact-us\ background.jpg");
+  background-image: url("/dist/images/contact-us\ background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -318,7 +332,7 @@ h5 {
 }
 
 .quick-links a:hover {
-color: #d8ba75;
+  color: #d8ba75;
 }
 
 /*We are Also Good At**/
