@@ -592,10 +592,6 @@ video {
   position: sticky;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -618,14 +614,6 @@ video {
 
 .top-10 {
   top: 2.5rem;
-}
-
-.right-auto {
-  right: auto;
-}
-
-.left-auto {
-  left: auto;
 }
 
 .z-10 {
@@ -743,6 +731,10 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-96 {
+  margin-top: 24rem;
+}
+
 .block {
   display: block;
 }
@@ -797,14 +789,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-9 {
-  height: 2.25rem;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .w-1\/2 {
@@ -966,10 +950,6 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .from-greenColor {
   --tw-gradient-from: #019267 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(1 146 103 / 0) var(--tw-gradient-to-position);
@@ -979,12 +959,6 @@ video {
 .from-lightB {
   --tw-gradient-from: #171717 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(23 23 23 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-black {
-  --tw-gradient-from: #000000 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1069,6 +1043,11 @@ video {
 .py-40 {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -1345,11 +1324,6 @@ video {
     padding-right: 0.25rem;
   }
 
-  .mobile\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .mobile\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -1503,11 +1477,6 @@ video {
   .sm\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .sm\:px-3 {
@@ -1665,11 +1634,6 @@ video {
   .md\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .md\:px-3 {
@@ -1873,11 +1837,6 @@ video {
   .lg\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .lg\:px-36 {

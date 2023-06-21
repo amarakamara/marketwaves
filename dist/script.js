@@ -82,3 +82,42 @@ window.onpopstate = () => {
     form.reset();
   }
 };
+
+//Booking Page
+var video = $(".myvid");
+var playBtn = $(".play-pause");
+var muteBtn = $(".mute-unmute");
+var play = $(".play");
+var mute = $(".mute");
+var unmute = $(".unmute");
+
+$(document).ready(function () {
+  video[0].muted = true;
+  video[0].play();
+});
+
+function playPause() {
+  if (video[0].paused) {
+    video[0].play();
+    play[0].classList.remove("fa-play");
+    play[0].classList.add("fa-pause");
+  } else {
+    video[0].pause();
+    play[0].classList.remove("fa-pause");
+    play[0].classList.add("fa-play");
+  }
+}
+
+function muteUnmute() {
+  if (video[0].muted === true) {
+    video[0].muted = false;
+    unmute[0].classList.remove("hidden");
+    mute[0].classList.add("hidden");
+  } else {
+    video[0].muted = true;
+    unmute[0].classList.add("hidden");
+    mute[0].classList.remove("hidden");
+  }
+}
+playBtn.on("click", playPause);
+muteBtn.on("click", muteUnmute);

@@ -107,7 +107,7 @@ h5 {
 .bg-img {
   position: relative;
   z-index: 1;
-  background-image: url("/images/images/Landing/background.jpg");
+  background-image: url("/dist/images/Landing/background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -425,4 +425,15 @@ h5 {
 }
 
 /*BOOK PAGE*/
+.book-home {
+  background: linear-gradient(to bottom, #000, transparent, #000);
+  width: 100%;
+  height: 895px;
+}
 
+.controls {
+  bottom: 18%;
+}
+.controls button {
+  margin-right: 1%;
+}
