@@ -93,7 +93,7 @@ var unmute = $(".unmute");
 
 $(document).ready(function () {
   video[0].muted = true;
-  video[0].play();
+  video[0].pause();
 });
 
 function playPause() {

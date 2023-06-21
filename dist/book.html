@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="relative">
-    <header class="header z-10">
+    <header class="header book-header">
       <nav id="myNav" class="overlay">
         <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="close-btn">&times;</a>
@@ -95,40 +95,10 @@
       </div>
     </header>
     <!-- home -->
-    <section class="section1">
-      <video
-        width="100%"
-        height="auto"
-        class="myvid absolute lg:block md:hidden sm:hidden mobile:hidden"
-        autoplay="true"
-        preload="auto"
-      >
-        <source src="/dist/video/home-vid-lap.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <!-- Mobile Video -->
-      <video
-        width="100%"
-        class="myvid absolute lg:hidden md:block sm:block mobile:block mobile:-top-30"
-        autoplay="true"
-        preload="auto"
-      >
-        <source src="/dist/video/home-vid-mo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      <!-- Description -->
-      <div
-        class="all-section book-home absolute lg:text-left md:text-center sm:text-center mobile:text-center"
-      >
-        <div class="lg:mt-20 md:mt-40 sm:mt-40 mobile:mt-40">
-          <h1
-            class="md:text-5xl sm:text-4xl mobile:text-3xl lg:text-8xl font-bold text-white text-shadow"
-          >
-            YOU MADE THE RIGHT DECISION CHOOSING US.
-          </h1>
-        </div>
+    <section class="section1 relative h-screen">
+      <div class="book-home absolute top-0 left-0 bg-black">
         <div
-          class="controls absolute w-full h-auto lg:text-left md:text-center sm:text-center mobile:text-center"
+          class="controls absolute all-section bottom-0 w-full flex items-center md:justify-center sm:justify-center mobile:justify-center lg:justify-start lg:text-left md:text-center sm:text-center mobile:text-center"
         >
           <button
             class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold play-pause"
@@ -148,68 +118,107 @@
             ></i>
           </button>
         </div>
-      </div>
-    </section>
-    <div class="all-section w-full h-auto bg-black">
-      <div>
-        <button class="w-20 h-20">REQUEST A QUOTE</button>
-      </div>
-      <div>
-        <button>BOOK AN APPOINTMENT</button>
-      </div>
-    </div>
-    
-    <section class="all-section booking-forms text-black">
-      <!-- Appointment -->
-      <div>
-        <div class="form-image">
-          <img src="/dist/images/Landing/background.jpg" alt="" />
+        <div
+          class="flex all-section items-center lg:text-left md:text-center sm:text-center mobile:text-center h-full"
+        >
+          <h1
+            class="text-8xl md:text-5xl sm:text-4xl mobile:text-3xl text-white font-bold text-shadow mb-96"
+          >
+            YOU MADE THE RIGHT DECISION CHOOSING US.
+          </h1>
         </div>
-        <div class="appointment">
-          <h2>Book An Appointment Online. Let’s Talk About Growth</h2>
-          <p>
+      </div>
+      <!-- laptop vid -->
+      <video
+        width="100%"
+        class="myvid absolute top-0 left-0 lg:block md:hidden sm:hidden mobile:hidden"
+        autoplay="true"
+        preload="auto"
+      >
+        <source src="/dist/video/home-vid-lap.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Mobile Video -->
+      <video
+        width="100%"
+        class="myvid absolute top-0 left-0 lg:hidden md:block sm:block mobile:block mobile:-top-30"
+        autoplay="true"
+        preload="auto"
+      >
+        <source src="/dist/video/home-vid-mo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section class="all-section booking-forms text-black">
+      <div class="flex quote-appoint w-full h-auto">
+        <button class="bg-greenColor w-1/2 h-20 px-auto py-auto text-xl">
+          BOOK AN APPOINTMENT
+        </button>
+        <button class="bg-gold px-auto w-1/2 h-20 py-auto text-xl">
+          REQUEST A QUOTE
+        </button>
+      </div>
+      <!-- Appointment -->
+      <div
+        class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container"
+      >
+        <div
+          class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1"
+        >
+          <img
+            src="/dist/images/other/view-business-desk-assortment.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+        >
+          <h2 class="text-2xl text-greenColor font-bold mb-6">
+            Book An Appointment Online. Let’s Talk About Growth
+          </h2>
+          <p class="my-4">
             Unleash your online potential with effective digital solutions. We
             have professionals awaiting to chat with you and resolve your issues
           </p>
-          <form action="">
+          <form class="appointment-form" action="">
             <input
               type="checkbox"
               id="service1"
               name="service1"
               value="Social Media marketing"
             />
-            <label for="service11"> Social Media Marketing</label><br />
+            <label for="service1"> Social Media Marketing</label>
             <input
               type="checkbox"
               id="service2"
               name="service2"
               value="Social Media Management"
             />
-            <label for="service2"> Social Media Management</label><br />
+            <label for="service2"> Social Media Management</label>
             <input
               type="checkbox"
               id="service3"
               name="service3"
               value="Branding"
             />
-            <label for="service3"> Branding</label><br />
+            <label for="service3"> Branding</label>
             <input type="checkbox" id="service4" name="service4" value="Web" />
-            <label for="service4"> Web Development</label><br />
-
+            <label for="service4"> Web Development</label>
             <input
               type="checkbox"
               id="service5"
               name="service5"
               value="Video Editing"
             />
-            <label for="service4"> Video Editing</label><br />
+            <label for="service4"> Video Editing</label>
             <input
               type="checkbox"
               id="service6"
               name="service6"
               value="Graphic Design"
             />
-            <label for="service4"> Graphic Design</label><br />
+            <label for="service4"> Graphic Design</label>
             <input type="checkbox" id="service7" name="service7" value="SEO" />
             <label for="service4"> SEO/SEM</label><br />
             <h3>Company Info (If Applicable):</h3>
