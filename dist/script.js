@@ -121,3 +121,9 @@ function muteUnmute() {
 }
 playBtn.on("click", playPause);
 muteBtn.on("click", muteUnmute);
+
+//Scroll down to booking
+document.querySelector(".scroll-arrow").addEventListener("click", function () {
+  const nextSection = document.querySelector("#booking-forms");
+  nextSection.scrollIntoView({ behavior: "smooth" });
+});
