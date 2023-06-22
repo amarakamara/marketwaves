@@ -110,7 +110,7 @@ h5 {
 .bg-img {
   position: relative;
   z-index: 1;
-  background-image: url("/dist/images/Landing/background.jpg");
+  background-image: url("images/Landing/background.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -277,7 +277,7 @@ h5 {
 .contact-bg {
   position: relative;
   z-index: 1;
-  background-image: url("/dist/images/contact-us\ background.jpg");
+  background-image: url("images/contact-us\ background.jpg");
   background-size: cover;
   background-position: center;
 }
