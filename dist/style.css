@@ -498,15 +498,18 @@ h5 {
 }
 .booking-forms {
   height: 100%;
-  background-color: #c1d8c8;
+  background-color: #019267;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /*booking form*/
-.forms-container {
+.appointment {
   border-top: 10px solid #000;
+}
+.quote {
+  border-top: 10px solid #d8ba75;
 }
 .appointment p,
 label {
@@ -534,4 +537,12 @@ label {
 
 .container-form {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project-description {
+  border-width: 2px;
+  width: 100%;
+  border-color: #000;
+  background: transparent;
+  margin: 1.5% 0;
 }

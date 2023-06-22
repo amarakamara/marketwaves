@@ -38,13 +38,9 @@
 
         <!-- Overlay content -->
         <div class="overlay-content">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#service">Services</a>
-          <a href="#work">Our Work</a>
-          <a href="#testimonial">Testimonial</a>
+          <a href="#book-home">Home</a>
+          <a href="#booking-forms">Book An Appointment</a>
           <a href="#contact">Contact Us</a>
-          <a href="#">Book A Consultation</a>
           <div class="flex flex-row justify-center items-center mt-10">
             <a href="###"
               ><i
@@ -78,7 +74,7 @@
         class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full"
       >
         <div class="navbar-logo">
-          <a href="#home">
+          <a href="#book-home">
             <img
               src="/dist/images/Logo/logo.png"
               alt="Logo"
@@ -95,7 +91,7 @@
       </div>
     </header>
     <!-- home -->
-    <section class="bg-black relative">
+    <section class="bg-black relative" id="book-home">
       <div
         class="book-home h-screen flex lg:flex-row sm:flex-col md:flex-col mobile:flex-col all-section"
       >
@@ -189,19 +185,19 @@
       <div class="container-form">
         <div class="flex quote-appoint w-full h-auto">
           <button
-            class="bg-black w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 text-white lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
+            class="bg-black appoint-btn w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 text-white lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
           >
             BOOK AN APPOINTMENT
           </button>
           <button
-            class="bg-gold w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
+            class="bg-gold quote-btn w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
           >
             REQUEST A QUOTE
           </button>
         </div>
         <!-- Appointment -->
         <div
-          class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container appointment"
+          class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col appointment"
         >
           <div
             class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 h-full bg-white"
@@ -218,7 +214,7 @@
             />
           </div>
           <div
-            class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+            class="lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
           >
             <h2 class="text-2xl text-black font-bold mb-6 mt-2">
               Book An Appointment Online. Let’s Talk About Growth
@@ -228,6 +224,17 @@
               have professionals awaiting to chat with you and resolve your
               issues
             </p>
+            <iframe
+              src="https://koalendar.com/e/consult-with-marketwaves-media?embed=true"
+              width="100%"
+              height="800px"
+              frameborder="0"
+              class="mt-2"
+            ></iframe>
+            <!-- 
+
+
+          
             <form class="appointment-form" action="">
               <input
                 type="checkbox"
@@ -293,30 +300,22 @@
                 name="company-website"
                 class="form-input"
               />
-              <iframe
-                src="https://koalendar.com/e/consult-with-marketwaves-media?embed=true"
-                width="100%"
-                height="800px"
-                frameborder="0"
-                class="mt-2"
-              ></iframe>
+             
             </form>
+               -->
           </div>
         </div>
         <!-- Quote -->
-        <div class="quote hidden">
-          <input type="submit" value="Submit" />
-        </div>
         <div
-          class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container quote"
+          class="hidden lg:flex-row md:flex-col sm:flex-col mobile:flex-col quote"
         >
           <div
-            class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 h-full bg-white"
+            class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white"
           >
             <img
-              src="/dist/images/book/flat-lay-2023-june-calendar-with-keyboard.jpg"
+              src="/dist/images/book/man-talking-mobile-phone-while-using-digital-tablet.jpg"
               alt=""
-              class="max-w-full max-h-full lg:block sm:hidden md:hidden mobile:hidden"
+              class="w-full h-full lg:block sm:hidden md:hidden mobile:hidden"
             />
             <img
               src="/dist/images/other/view-business-desk-assortment.jpg"
@@ -324,18 +323,23 @@
               class="max-w-full max-h-full lg:hidden sm:block md:block mobile:block"
             />
           </div>
+
           <div
-            class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+            class="lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
           >
-            <h2 class="text-2xl text-gold font-bold mb-6 mt-2">
-              Book An Appointment Online. Let’s Talk About Growth
+            <h2 class="text-2xl text-black font-bold mb-6 mt-2 text-shadow">
+              We will always have an offer you. Let us know what you want.
             </h2>
             <p class="my-4">
               Unleash your online potential with effective digital solutions. We
               have professionals awaiting to chat with you and resolve your
               issues
             </p>
-            <form class="appointment-form" action="">
+            <form
+              class="quote-form mt-16"
+              action="https://formspree.io/f/xlekqqal"
+              method="post"
+            >
               <input
                 type="checkbox"
                 id="service1"
@@ -386,28 +390,30 @@
               />
               <label for="service4"> SEO/SEM</label><br />
               <!-- Personal Info -->
-              <h3 class="text-2xl text-gold my-4">Personal Info:</h3>
+              <h3 class="text-2xl text-gold mb-4 mt-10">Personal Info:</h3>
               <input
                 type="text"
                 placeholder="Full Name:"
                 name="full-name"
                 class="form-input"
+                required
               /><br />
               <input
                 type="email"
                 placeholder="Email:"
                 name="user-email"
                 class="form-input"
+                required
               />
               <input
                 type="tel"
-                placeholder="Email:"
+                placeholder="Phone"
                 name="user-phone"
                 class="form-input"
               />
 
               <!-- Company Info -->
-              <h3 class="text-2xl text-gold my-4">
+              <h3 class="text-2xl text-gold mb-4 mt-10">
                 Company Info (If Applicable):
               </h3>
               <input
@@ -425,15 +431,180 @@
               <textarea
                 name="project-description"
                 id="project-description"
-                cols="90"
+                class="project-description"
+                cols="30"
                 rows="10"
                 placeholder="Project Description:"
               ></textarea
               ><br />
-              <input type="submit" value="Submit" />
+              <input
+                class="w-full h-16 my-4 text-xl bg-gold py-auto px-auto cursor-pointer"
+                type="submit"
+                value="Submit"
+              />
             </form>
           </div>
           <!-- Quote -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us section -->
+
+    <section class="all-section contact-bg" id="contact">
+      <div class="contact-head flex flex-row mb-20">
+        <div class="contact-description">
+          <h2
+            class="text-white text-bold lg:text-6xl md:text-4xl sm:text-4xl mobile:text-4xl px-20 py-10 mobile:px-0 mt-5 pt-5"
+          >
+            Ready to take your brand<br />
+            to new heights?
+          </h2>
+          <p class="text-xl lg:pr-60 md:pr-0 sm:pr-0 mobile:pr-0 text-gold">
+            Contact us today to discuss your project and learn how we can tailor
+            our services to meet your specific needs. Our dedicated team is here
+            to provide you with the personalized attention and expertise you
+            deserve
+          </p>
+        </div>
+        <div class="larger-logo">
+          <img
+            class="lg:w-60 lg:mr-20 lg:inline md:hidden sm:hidden mobile:hidden"
+            src="/dist/images/Logo/logo.png"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div
+        class="form-contact flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col"
+      >
+        <div
+          class="form lg:w-1/2 md:w-full sm:w-full mobile:w-full lg:pb-0 md:pb-10 sm:pb-10 mobile:pb-10"
+        >
+          <form
+            action="https://formspree.io/f/mayzrvll"
+            method="post"
+            class="pt-0 mt-0 contact-form"
+            id="myform"
+          >
+            <input
+              placeholder="Name:"
+              type="text"
+              id="name"
+              name="name"
+              class="form-el name-el pt-0 mt-0"
+              required
+            /><br /><br />
+            <input
+              placeholder="Email:"
+              type="email"
+              id="email"
+              name="email"
+              class="form-el"
+              required
+            /><br /><br />
+            <input
+              placeholder="Your Phone:"
+              type="tel"
+              id="phone"
+              name="phone"
+              class="form-el"
+            /><br /><br />
+            <textarea
+              placeholder="How can we help you?"
+              name="message"
+              id="message"
+              cols="30"
+              rows="6"
+              class="message"
+            ></textarea
+            ><br />
+            <button
+              type="submit"
+              class="border border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold submit-btn"
+            >
+              GET IN TOUCH
+            </button>
+          </form>
+        </div>
+        <div class="mid-div sc:w-1/4 md:w-0 sm:w-0 mobile:w-0 lg:w-1/4"></div>
+
+        <!-- Contacts/mobile Logo -->
+        <div
+          class="contact-info lg:w-1/4 lg:flex-none md:flex md:flex-col sm:flex sm:flex-col mobile:flex mobile:flex-col lg:relative md:static sm:static mobile:static"
+        >
+          <div
+            class="lg:flex-none md:flex sm:flex mobile:flex md:flex-row sm:flex-row mobile:flex-row md:static sm:static mobile:static lg:w-auto md:w-full sm:w-full mobile:w-full"
+          >
+            <!-- Logo on mobile -->
+            <div
+              class="larger-logo2 w-1/2 lg:hidden md:inline sm:inline mobile:inline"
+            >
+              <img
+                class="mobile-logo object-cover shrink-0 lg:hidden md:inline sm:inline mobile:inline"
+                src="/dist/images/Logo/logo.png"
+                alt="logo"
+              />
+            </div>
+            <!-- Contact info -->
+            <div class="lg:w-full md:w-1/2 sm:w-1/2 mobile:w-1/2">
+              <h2
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl text-gold"
+              >
+                Call us:
+              </h2>
+              <p
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-5 block"
+              >
+                91 8951449006
+              </p>
+              <p
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl inline"
+              >
+                231 777643057
+              </p>
+              <h2
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-10 text-gold"
+              >
+                Email Us:
+              </h2>
+              <a
+                href="mailto:info@marketwavesmedia.com"
+                class="lg:text-2xl md:text-xl sm:text-xl mobile:text-xl mt-5 lg:break-all md:break-keep sm:break-keep mobile:break-all inline"
+              >
+                info@marketwavesmedia.com
+              </a>
+            </div>
+          </div>
+          <!-- Social medias icons -->
+          <div
+            class="flex flex-row lg:absolute lg:bottom-0 lg:right-0 md:static sm:static mobile:static md:mt-10 sm:mt-10 mobile:mt-10 lg:mt-0 lg:w-auto md:w-full sm:w-full mobile:w-full"
+          >
+            <a href="###"
+              ><i
+                class="fa-brands fa-facebook-f mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-twitter mr-10 mobile:mr-6 ml-0 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-linkedin mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-tiktok mr-10 mobile:mr-6 text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+            <a href="###"
+              ><i
+                class="fa-brands fa-instagram text-7xl mobile:text-5xl inline"
+              ></i
+            ></a>
+          </div>
         </div>
       </div>
     </section>
@@ -492,12 +663,9 @@
           >
             QUICK LINKS
           </h2>
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#service">Services</a>
-          <a href="#work">Our Work</a>
-          <a href="#testimonial">Testimonial</a>
-          <a href="#contact">Contact</a>
+          <a href="#book-home">Home</a>
+          <a href="#booking-forms">Book An Appointment</a>
+          <a href="#contact">Contact Us</a>
         </div>
       </div>
       <hr class="mt-20" />

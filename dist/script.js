@@ -69,16 +69,28 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//Form
+//Forms
 
 window.onbeforeunload = () => {
-  for (const form of document.getElementsByTagName("form")) {
+  for (const form of document.getElementsByClassName("contact-form")) {
     form.reset();
   }
 };
 
 window.onpopstate = () => {
-  for (const form of document.getElementsByTagName("form")) {
+  for (const form of document.getElementsByClassName("contact-form")) {
+    form.reset();
+  }
+};
+
+window.onbeforeunload = () => {
+  for (const form of document.getElementsByClassName("quote-form")) {
+    form.reset();
+  }
+};
+
+window.onpopstate = () => {
+  for (const form of document.getElementsByClassName("quote-form")) {
     form.reset();
   }
 };
@@ -127,3 +139,25 @@ document.querySelector(".scroll-arrow").addEventListener("click", function () {
   const nextSection = document.querySelector("#booking-forms");
   nextSection.scrollIntoView({ behavior: "smooth" });
 });
+
+appointBtn = $(".appoint-btn");
+quoteBtn = $(".quote-btn");
+appoint = $(".appointment");
+quote = $(".quote");
+
+function showAppoint() {
+  appoint[0].classList.add("flex");
+  appoint[0].classList.remove("hidden");
+  quote[0].classList.add("hidden");
+  quote[0].classList.remove("flex");
+}
+
+function showQuote() {
+  appoint[0].classList.add("hidden");
+  appoint[0].classList.remove("flex");
+  quote[0].classList.add("flex");
+  quote[0].classList.remove("hidden");
+}
+
+appointBtn.on("click", showAppoint);
+quoteBtn.on("click", showQuote);
