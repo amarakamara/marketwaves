@@ -437,7 +437,7 @@ h5 {
     width: 100%;
     height: 50vh;
   }
-  .book-des{
+  .book-des {
     margin-bottom: 5%;
   }
 }
@@ -498,13 +498,15 @@ h5 {
 }
 .booking-forms {
   height: 100%;
-  background-image: url(/dist/images/Landing/background.jpg);
+  background-color: #c1d8c8;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+/*booking form*/
 .forms-container {
-  border-top: 10px solid #019267;
+  border-top: 10px solid #000;
 }
 .appointment p,
 label {
@@ -512,5 +514,24 @@ label {
 }
 .appointment label {
   margin-right: 1%;
-  font-weight: bold;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 357px) {
+  .appointment label {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
+.form-input {
+  outline: 0;
+  width: 100%;
+  border-width: 0 0 2px;
+  border-color: #000;
+  background: transparent;
+  margin: 2% 0;
+}
+
+.container-form {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
 }

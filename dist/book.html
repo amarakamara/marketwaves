@@ -186,98 +186,255 @@
     </section>
 
     <section class="all-section booking-forms text-black" id="booking-forms">
-      <div class="flex quote-appoint w-full h-auto">
-        <button class="bg-greenColor w-1/2 h-20 px-auto py-auto text-xl">
-          BOOK AN APPOINTMENT
-        </button>
-        <button class="bg-gold px-auto w-1/2 h-20 py-auto text-xl">
-          REQUEST A QUOTE
-        </button>
-      </div>
-      <!-- Appointment -->
-      <div
-        class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container"
-      >
+      <div class="container-form">
+        <div class="flex quote-appoint w-full h-auto">
+          <button
+            class="bg-black w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 text-white lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
+          >
+            BOOK AN APPOINTMENT
+          </button>
+          <button
+            class="bg-gold w-1/2 h-20 px-auto lg:py-auto md:py-auto sm:py-auto mobile:py-1 lg:text-xl md:text-xl sm:text-xl mobile:text-sm"
+          >
+            REQUEST A QUOTE
+          </button>
+        </div>
+        <!-- Appointment -->
         <div
-          class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1"
+          class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container appointment"
         >
-          <img
-            src="/dist/images/other/view-business-desk-assortment.jpg"
-            alt=""
-          />
+          <div
+            class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 h-full bg-white"
+          >
+            <img
+              src="/dist/images/book/flat-lay-2023-june-calendar-with-keyboard.jpg"
+              alt=""
+              class="max-w-full max-h-full lg:block sm:hidden md:hidden mobile:hidden"
+            />
+            <img
+              src="/dist/images/other/view-business-desk-assortment.jpg"
+              alt=""
+              class="max-w-full max-h-full lg:hidden sm:block md:block mobile:block"
+            />
+          </div>
+          <div
+            class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+          >
+            <h2 class="text-2xl text-black font-bold mb-6 mt-2">
+              Book An Appointment Online. Let’s Talk About Growth
+            </h2>
+            <p class="my-4">
+              Unleash your online potential with effective digital solutions. We
+              have professionals awaiting to chat with you and resolve your
+              issues
+            </p>
+            <form class="appointment-form" action="">
+              <input
+                type="checkbox"
+                id="service1"
+                name="service1"
+                value="Social Media marketing"
+              />
+              <label for="service1"> Social Media Marketing</label>
+              <input
+                type="checkbox"
+                id="service2"
+                name="service2"
+                value="Social Media Management"
+              />
+              <label for="service2"> Social Media Management</label>
+              <input
+                type="checkbox"
+                id="service3"
+                name="service3"
+                value="Branding"
+              />
+              <label for="service3"> Branding</label>
+              <input
+                type="checkbox"
+                id="service4"
+                name="service4"
+                value="Web"
+              />
+              <label for="service4"> Web Development</label>
+              <input
+                type="checkbox"
+                id="service5"
+                name="service5"
+                value="Video Editing"
+              />
+              <label for="service4"> Video Editing</label>
+              <input
+                type="checkbox"
+                id="service6"
+                name="service6"
+                value="Graphic Design"
+              />
+              <label for="service4"> Graphic Design</label>
+              <input
+                type="checkbox"
+                id="service7"
+                name="service7"
+                value="SEO"
+              />
+              <label for="service4"> SEO/SEM</label><br />
+              <h3 class="text-2xl text-black my-4">
+                Company Info (If Applicable):
+              </h3>
+              <input
+                type="text"
+                placeholder="Company name:"
+                name="company-name"
+                class="form-input"
+              /><br />
+              <input
+                type="text"
+                placeholder="Company website:"
+                name="company-website"
+                class="form-input"
+              />
+              <iframe
+                src="https://koalendar.com/e/consult-with-marketwaves-media?embed=true"
+                width="100%"
+                height="800px"
+                frameborder="0"
+                class="mt-2"
+              ></iframe>
+            </form>
+          </div>
+        </div>
+        <!-- Quote -->
+        <div class="quote hidden">
+          <input type="submit" value="Submit" />
         </div>
         <div
-          class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+          class="flex lg:flex-row md:flex-col sm:flex-col mobile:flex-col forms-container quote"
         >
-          <h2 class="text-2xl text-greenColor font-bold mb-6">
-            Book An Appointment Online. Let’s Talk About Growth
-          </h2>
-          <p class="my-4">
-            Unleash your online potential with effective digital solutions. We
-            have professionals awaiting to chat with you and resolve your issues
-          </p>
-          <form class="appointment-form" action="">
-            <input
-              type="checkbox"
-              id="service1"
-              name="service1"
-              value="Social Media marketing"
+          <div
+            class="form-image lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 h-full bg-white"
+          >
+            <img
+              src="/dist/images/book/flat-lay-2023-june-calendar-with-keyboard.jpg"
+              alt=""
+              class="max-w-full max-h-full lg:block sm:hidden md:hidden mobile:hidden"
             />
-            <label for="service1"> Social Media Marketing</label>
-            <input
-              type="checkbox"
-              id="service2"
-              name="service2"
-              value="Social Media Management"
+            <img
+              src="/dist/images/other/view-business-desk-assortment.jpg"
+              alt=""
+              class="max-w-full max-h-full lg:hidden sm:block md:block mobile:block"
             />
-            <label for="service2"> Social Media Management</label>
-            <input
-              type="checkbox"
-              id="service3"
-              name="service3"
-              value="Branding"
-            />
-            <label for="service3"> Branding</label>
-            <input type="checkbox" id="service4" name="service4" value="Web" />
-            <label for="service4"> Web Development</label>
-            <input
-              type="checkbox"
-              id="service5"
-              name="service5"
-              value="Video Editing"
-            />
-            <label for="service4"> Video Editing</label>
-            <input
-              type="checkbox"
-              id="service6"
-              name="service6"
-              value="Graphic Design"
-            />
-            <label for="service4"> Graphic Design</label>
-            <input type="checkbox" id="service7" name="service7" value="SEO" />
-            <label for="service4"> SEO/SEM</label><br />
-            <h3>Company Info (If Applicable):</h3>
-            <input
-              type="text"
-              placeholder="Company name:"
-              name="company-name"
-            />
-            <input
-              type="text"
-              placeholder="Company name:"
-              name="company-website"
-            />
-            <iframe
-              src="https://koalendar.com/e/consult-with-marketwaves-media?embed=true"
-              width="100%"
-              height="800px"
-              frameborder="0"
-            ></iframe>
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
+          </div>
+          <div
+            class="appointment lg:w-1/2 md:w-full sm:w-full mobile:w-full grow-1 bg-white px-4"
+          >
+            <h2 class="text-2xl text-gold font-bold mb-6 mt-2">
+              Book An Appointment Online. Let’s Talk About Growth
+            </h2>
+            <p class="my-4">
+              Unleash your online potential with effective digital solutions. We
+              have professionals awaiting to chat with you and resolve your
+              issues
+            </p>
+            <form class="appointment-form" action="">
+              <input
+                type="checkbox"
+                id="service1"
+                name="service1"
+                value="Social Media marketing"
+              />
+              <label for="service1"> Social Media Marketing</label>
+              <input
+                type="checkbox"
+                id="service2"
+                name="service2"
+                value="Social Media Management"
+              />
+              <label for="service2"> Social Media Management</label>
+              <input
+                type="checkbox"
+                id="service3"
+                name="service3"
+                value="Branding"
+              />
+              <label for="service3"> Branding</label>
+              <input
+                type="checkbox"
+                id="service4"
+                name="service4"
+                value="Web"
+              />
+              <label for="service4"> Web Development</label>
+              <input
+                type="checkbox"
+                id="service5"
+                name="service5"
+                value="Video Editing"
+              />
+              <label for="service4"> Video Editing</label>
+              <input
+                type="checkbox"
+                id="service6"
+                name="service6"
+                value="Graphic Design"
+              />
+              <label for="service4"> Graphic Design</label>
+              <input
+                type="checkbox"
+                id="service7"
+                name="service7"
+                value="SEO"
+              />
+              <label for="service4"> SEO/SEM</label><br />
+              <!-- Personal Info -->
+              <h3 class="text-2xl text-gold my-4">Personal Info:</h3>
+              <input
+                type="text"
+                placeholder="Full Name:"
+                name="full-name"
+                class="form-input"
+              /><br />
+              <input
+                type="email"
+                placeholder="Email:"
+                name="user-email"
+                class="form-input"
+              />
+              <input
+                type="tel"
+                placeholder="Email:"
+                name="user-phone"
+                class="form-input"
+              />
 
-        <div class="quote"></div>
+              <!-- Company Info -->
+              <h3 class="text-2xl text-gold my-4">
+                Company Info (If Applicable):
+              </h3>
+              <input
+                type="text"
+                placeholder="Company name:"
+                name="company-name"
+                class="form-input"
+              /><br />
+              <input
+                type="text"
+                placeholder="Company website:"
+                name="company-website"
+                class="form-input"
+              />
+              <textarea
+                name="project-description"
+                id="project-description"
+                cols="90"
+                rows="10"
+                placeholder="Project Description:"
+              ></textarea
+              ><br />
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <!-- Quote -->
+        </div>
       </div>
     </section>
 
