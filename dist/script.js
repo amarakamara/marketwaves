@@ -96,17 +96,12 @@ window.onpopstate = () => {
 };
 
 //Booking Page
-var video = $(".myvid");
-var playBtn = $(".play-pause");
-var muteBtn = $(".mute-unmute");
-var play = $(".play");
-var mute = $(".mute");
-var unmute = $(".unmute");
-
-$(document).ready(function () {
-  video[0].muted = true;
-  video[0].pause();
-});
+const video = $(".myvid");
+const playBtn = $(".play-pause");
+const muteBtn = $(".mute-unmute");
+const play = $(".play");
+const mute = $(".mute");
+const unmute = $(".unmute");
 
 function playPause() {
   if (video[0].paused) {
