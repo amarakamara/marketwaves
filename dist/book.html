@@ -67,7 +67,7 @@
         </div>
       </nav>
       <div
-        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full"
+        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full lg:invisible md:visible sm:visible mobile:visible"
       >
         <div class="navbar-logo">
           <a href="#book-home">
@@ -81,6 +81,28 @@
           >
         </div>
       </div>
+    </header>
+    <header>
+      <nav
+        class="bg-black h-24 large-nav sectionPX flex flex-row fixed top-0 z-50 items-center w-full lg:visible md:invisible sm:invisible mobile:invisible"
+      >
+        <div class="navbar-logo">
+          <a href="#home">
+            <img src="images/Logo/logo.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+        </div>
+        <div class="large-items book-links flex w-80 self-center">
+          <a href="#book-home">Home</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="justify-end ml-auto">
+          <a
+            href="#booking-forms"
+            class="book-btn2 border border-gold text-white px-6 py-2 font-bold transition duration-300"
+            >BOOK A CONSULTATION</a
+          >
+        </div>
+      </nav>
     </header>
     <!-- home -->
     <section class="bg-black relative" id="book-home">
@@ -123,7 +145,7 @@
         </div>
         <div class="video-container relative overflow-hidden">
           <div
-            class="controls absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 w-full flex-row lg:justify-end md:justify-end sm:justify-center mobile:justify-center lg:text-left md:text-center sm:text-center mobile:text-center"
+            class="controls absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 w-full flex-row lg:justify-end md:justify-end sm:justify-center mobile:justify-center lg:text-left md:text-center sm:text-center mobile:text-center"
           >
             <button
               class="border w-20 h-14 mr-2 border-gold text-white px-20 py-4 font-bold transition duration-300 bg-gold play-pause"

@@ -40,6 +40,26 @@ h5 {
   margin: 7% 0 0;
 }
 
+/*large navbar*/
+.large-items a {
+  padding: 0 2%;
+  display: inline;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.large-items a:hover {
+  background-color: #d8ba75;
+}
+.large-items {
+  margin-left: 30%;
+}
+.large-nav {
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.8);
+}
+.book-links {
+  margin-left: 60%;
+}
 /*navbar*/
 .overlay {
   height: 100%;
@@ -167,6 +187,10 @@ h5 {
 
 .cta1-btn {
   background-color: #d8ba75;
+}
+/*about*/
+.alt-img {
+  display: none;
 }
 
 /*Why choose us*/
@@ -472,22 +496,76 @@ h5 {
 }
 
 @media (min-width: 1022px) and (max-width: 1360px) {
-  .wel-img {
-    position: static;
-    width: 60%;
+  .about-img {
+    display: none;
   }
-  .home-title {
-    font-size: 3rem;
+  .alt-img {
+    display: block;
   }
-  .success {
-    font-size: 1.7rem;
-  }
-  .hero {
-    padding-right: 3rem;
-    padding-left: 3rem;
+  .our-services button {
+    font-size: 0.8rem;
   }
 }
+@media (min-width: 1022px) and (max-width: 1195px) {
+  .about-img {
+    display: none;
+  }
+  .alt-img {
+    display: block;
+  }
+  .our-services button {
+    font-size: 0.9rem;
+    padding: 1rem 3rem;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1550px) {
+  .large-items a {
+    padding: 0 2%;
+    display: inline;
+    font-size: 1rem;
+    font-weight: bold;
+  }
 
+  .large-items {
+    margin-left: 30%;
+  }
+  .book-btn {
+    font-size: 0.7rem;
+    line-break: none;
+    padding: 8px 24px;
+    margin: 0;
+  }
+}
+@media (max-width: 1248px) {
+  .large-items a {
+    padding: 0 2%;
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .large-items {
+    margin-left: 30%;
+  }
+  .book-btn {
+    font-size: 0.8rem;
+    line-break: none;
+    padding: 8px 24px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1540px) and (max-width: 1640px) {
+  .book-btn2 {
+    font-size: 0.5rem;
+    line-break: none;
+    padding: 8px 24px;
+    margin: 0;
+  }
+  .book-links {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 /*BOOK PAGE*/
 .video-container {
   width: 66.666667%;

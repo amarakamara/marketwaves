@@ -73,7 +73,7 @@
         </div>
       </nav>
       <div
-        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full"
+        class="nav-top flex flex-row fixed top-10 z-10 lg:px-10 md:px-3 sm:px-3 mobile:px-3 items-center w-full lg:invisible sm:visible md:visible mobile:visible"
       >
         <div class="navbar-logo">
           <a href="#home">
@@ -87,6 +87,34 @@
           >
         </div>
       </div>
+
+      <!-- Large Nav -->
+    </header>
+    <header>
+      <nav
+        class="bg-black h-24 large-nav sectionPX flex flex-row fixed top-0 z-10 items-center w-full lg:visible md:invisible sm:invisible mobile:invisible"
+      >
+        <div class="navbar-logo"> 
+          <a href="#home">
+            <img src="images/Logo/logo.png" alt="Logo" class="h-10 w-auto" />
+          </a>
+        </div>
+        <div class="large-items flex w-1/2 self-center">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#service">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#testimonial">Testimonial</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+        <div class="justify-end ml-auto">
+          <a
+            href="book.html"
+            class="book-btn border border-gold text-white px-6 py-2 font-bold transition duration-300"
+            >BOOK A CONSULTATION</a
+          >
+        </div>
+      </nav>
     </header>
 
     <section class="bg-img home" id="home">
@@ -100,7 +128,7 @@
             >
               MARKETWAVES MEDIA
             </h1>
-            <h3 class="text-lg lg:text-4xl text-gold lg:mb-8 success">
+            <h3 class="text-xl lg:text-4xl text-gold lg:mb-8 success">
               Your Partner in Digital Success
             </h3>
             <p
@@ -167,7 +195,7 @@
         class="container flex flex-col lg:flex-row md:mt-10 sm:mt-10 mobile:mt-10 w-full"
       >
         <div
-          class="lg:w-1/2 md:w-full sm:w-full mobile:w-full flex bg-cover bg-center relative overflow-hidden reveal"
+          class="lg:w-1/2 md:w-full sm:w-full mobile:w-full flex bg-cover bg-center relative overflow-hidden reveal about-img"
         >
           <div class="overlay-container grow-0">
             <img
@@ -210,10 +238,17 @@
             />
           </div>
         </div>
+        <div class="alt-img w-1/2 h-full relative">
+          <img
+            src="images/about us/11906380_4845299.jpg"
+            alt="marketing-image"
+            class="w-full h-auto absolute top-24 object-cover"
+          />
+        </div>
         <div
-          class="lg:w-1/2 lg:ml-14 md:ml-0 md:mt-20 sm:mt-20 mobile:mt-20 md:w-full sm:w-full mobile:w-full py-auto items-center reveal"
+          class="lg:w-1/2 lg:ml-14 md:ml-0 md:mt-20 sm:mt-20 mobile:mt-20 md:w-full sm:w-full mobile:w-full py-auto reveal"
         >
-          <div>
+          <div class="w-full h-full my-10">
             <h2 class="text-3xl text-gold font-bold mb-6">Who are we?</h2>
             <p class="text-xl text-white">
               At
