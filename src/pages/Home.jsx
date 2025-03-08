@@ -62,7 +62,7 @@ function Home() {
             >
               <Link
                 to="/contact"
-                className="inline-block bg-mw-gold text-white px-12 py-5 text-xl font-semibold uppercase tracking-wider rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300"
+                className="inline-block bg-mw-gold text-white px-12 py-5 text-xl font-semibold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300"
               >
                 Let’s Create
               </Link>
@@ -143,7 +143,7 @@ function Home() {
                       )}
                     </svg>
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest mb-4">
+                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
                     {item.title}
                   </h3>
                   <p className="text-mw-black/70 text-lg">{item.desc}</p>
@@ -169,7 +169,7 @@ function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest"
+              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest text-nowrap"
             >
               Unleash Your Vision
             </motion.h2>
@@ -189,7 +189,7 @@ function Home() {
             >
               <Link
                 to="/contact"
-                className="bg-mw-gold text-white px-12 py-5 text-xl font-bold uppercase tracking-wider rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-lg shadow-mw-forest/20"
+                className="bg-mw-gold text-white px-12 py-5 text-xl font-bold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-lg shadow-mw-forest/20"
               >
                 Request a Proposal
               </Link>
@@ -206,7 +206,7 @@ function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest"
+              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest text-nowrap"
             >
               Triumph Tales
             </motion.h2>
@@ -228,7 +228,7 @@ function Home() {
                   <p className="text-2xl lg:text-3xl text-mw-black  mb-8 leading-relaxed z-10 relative">
                     “{story.quote}”
                   </p>
-                  <p className="text-mw-gold font-bold text-2xl lg:text-3xl tracking-widest z-10 relative">
+                  <p className="text-mw-gold font-bold text-2xl lg:text-3xl tracking-widest text-nowrap z-10 relative">
                     {story.client}
                   </p>
                 </motion.div>
@@ -246,7 +246,7 @@ function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest"
+              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap"
             >
               Stay Ahead
             </motion.h2>
@@ -271,7 +271,7 @@ function Home() {
                 placeholder="Your email"
                 className="flex-1 px-8 py-5 bg-mw-black/10 text-mw-black  border-none focus:outline-none placeholder-mw-black/50"
               />
-              <button className="bg-mw-gold text-white px-10 py-5 rounded-r-full  font-bold uppercase tracking-wider hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20">
+              <button className="bg-mw-gold text-white px-10 py-5 rounded-r-full  font-bold uppercase tracking-widest text-nowrap hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20">
                 Join Now
               </button>
             </motion.div>

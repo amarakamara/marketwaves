@@ -72,7 +72,7 @@ function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest"
+            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR TEAM
           </motion.h1>
@@ -89,7 +89,7 @@ function Team() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest">
+            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
               Who We Are
             </h2>
             <p className="text-2xl text-mw-black mb-6 leading-relaxed">
@@ -133,7 +133,7 @@ function Team() {
                   style={{ filter: "grayscale(100%)" }}
                 />
                 <div className="p-6">
-                  <h2 className="text-2xl lg:text-3xl font-bold text-mw-black uppercase tracking-widest mb-2">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-2">
                     {member.name}
                   </h2>
                   <p className="text-xl text-mw-black mb-6">

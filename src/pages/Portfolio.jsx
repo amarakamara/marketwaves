@@ -73,7 +73,7 @@ function Portfolio() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest"
+            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR WORK
           </motion.h1>
@@ -90,7 +90,7 @@ function Portfolio() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widestt">
+            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrapt">
               Case Study: Fragrance Mist
             </h2>
             {/* Images - Only visible on large screens */}
@@ -160,7 +160,7 @@ function Portfolio() {
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
-                  <h2 className="text-2xl lg:text-3xl font-bold text-mw-black uppercase tracking-widest mb-4">
+                  <h2 className="text-2xl lg:text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
                     {project.title}
                   </h2>
                   <p className="text-xl text-mw-black">{project.description}</p>

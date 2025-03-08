@@ -66,7 +66,7 @@ function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest"
+            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR SERVICES
           </motion.h1>
@@ -91,7 +91,7 @@ function Services() {
                 className="relative p-10 rounded-3xl shadow-sm bg-gradient-to-br from-mw-forest/20 to-mw-black/10 backdrop-blur-md hover:shadow-2xl hover:shadow-mw-gold/40 transition-all duration-500"
                 whileHover={{ scale: 1.05 }}
               >
-                <h2 className="text-3xl lg:text-4xl font-bold text-mw-black uppercase tracking-widest mb-6">
+                <h2 className="text-3xl lg:text-4xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-6">
                   {service.title}
                 </h2>
                 <ul className="text-mw-black space-y-4 mb-8">

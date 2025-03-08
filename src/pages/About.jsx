@@ -27,7 +27,7 @@ function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest"
+            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR STORY
           </motion.h1>
@@ -44,7 +44,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest">
+            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
               Our Journey
             </h2>
             <p className="text-2xl text-mw-black mb-6 leading-relaxed">
@@ -66,7 +66,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest">
+            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
               Our Vision
             </h2>
             <p className="text-2xl text-mw-black mb-6 leading-relaxed">
@@ -91,7 +91,7 @@ function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest"
+              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap"
             >
               Our Values
             </motion.h2>
@@ -142,7 +142,7 @@ function About() {
                       )}
                     </svg>
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest mb-4">
+                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
                     {item.title}
                   </h3>
                   <p className="text-2xl text-mw-black">{item.desc}</p>
