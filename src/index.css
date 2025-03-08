@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --mw-gold: #d8ba75;
+    --mw-black: #000000;
+    --mw-mint: #c1d8cb;
+    --mw-forest: #004225;
+  }
+}
+
+@layer components {
+  .text-mw-gold {
+    @apply text-[var(--mw-gold)];
+  }
+  .bg-mw-gold {
+    @apply bg-[var(--mw-gold)];
+  }
+  .text-mw-black {
+    @apply text-[var(--mw-black)];
+  }
+  .bg-mw-black {
+    @apply bg-[var(--mw-black)];
+  }
+  .text-mw-mint {
+    @apply text-[var(--mw-mint)];
+  }
+  .bg-mw-mint {
+    @apply bg-[var(--mw-mint)];
+  }
+  .text-mw-forest {
+    @apply text-[var(--mw-forest)];
+  }
+  .bg-mw-forest {
+    @apply bg-[var(--mw-forest)];
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
