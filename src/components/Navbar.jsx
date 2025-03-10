@@ -50,7 +50,7 @@ function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-3 lg:px-2">
         <div className="flex items-center justify-between h-24 relative">
           <motion.div
             className="flex items-center"
@@ -60,7 +60,7 @@ function Navbar() {
           >
             <Link
               to="/"
-              className="text-mw-gold text-5xl font-black tracking-tight font-[Poppins] relative"
+              className="text-mw-gold text-4xl lg:text-5xl font-black tracking-tight font-[Poppins] relative"
             >
               Marketwaves
             </Link>
@@ -102,7 +102,7 @@ function Navbar() {
           variants={menuVariants}
           initial="hidden"
           animate="visible"
-          className="md:hidden bg-white/95 backdrop-blur-md shadow-md absolute w-full top-full left-0"
+          className="md:hidden bg-white/95 backdrop-blur-md shadow-md absolute w-full h-screen top-full left-0"
         >
           <div className="px-8 py-8 space-y-6">
             {navLinks.map((link) => (

@@ -13,7 +13,7 @@ function About() {
     <div className="pt-24 min-h-screen bg-white overflow-hidden">
       {/* Hero Section with Background Image and Overlay Text */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center m-6 lg:mx-12 rounded-3xl"
+        className="relative h-[500px] lg:h-screen flex items-center justify-center bg-cover bg-center my-4 mx-3 lg:my-3 lg:mx-12 rounded-3xl"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
@@ -27,7 +27,7 @@ function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
+            className="text-5xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR STORY
           </motion.h1>
@@ -36,7 +36,7 @@ function About() {
 
       {/* Journey and Vision Combined */}
       <section className="py-32 relative">
-        <div className="px-6 lg:px-12 w-full flex flex-col lg:flex-row justify-between gap-16">
+        <div className="px-3 lg:px-12 w-full flex flex-col lg:flex-row justify-between gap-16">
           <motion.div
             className="w-full lg:w-1/2 text-center"
             initial={{ opacity: 0, x: -100 }}
@@ -44,7 +44,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest text-nowrap">
               Our Journey
             </h2>
             <p className="text-2xl text-mw-black mb-6 leading-relaxed">
@@ -66,7 +66,7 @@ function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest text-nowrap">
               Our Vision
             </h2>
             <p className="text-2xl text-mw-black mb-6 leading-relaxed">
@@ -83,7 +83,7 @@ function About() {
       </section>
 
       {/* Values Section */}
-      <section className="py-32 relative">
+      <section className="py-12 lg:py-32 relative">
         <div className="px-6 lg:px-12 w-full flex items-center justify-center relative">
           <motion.div className="text-center relative z-10">
             <motion.h2
@@ -91,7 +91,7 @@ function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest text-nowrap"
             >
               Our Values
             </motion.h2>
@@ -142,7 +142,7 @@ function About() {
                       )}
                     </svg>
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
+                  <h3 className="text-[28px] font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
                     {item.title}
                   </h3>
                   <p className="text-2xl text-mw-black">{item.desc}</p>

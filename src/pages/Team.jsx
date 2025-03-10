@@ -58,7 +58,7 @@ function Team() {
     <div className="pt-24 min-h-screen bg-white overflow-hidden">
       {/* Hero Section with Background Image and Overlay Text */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center m-6 lg:mx-12 rounded-3xl"
+        className="relative h-[500px] lg:h-screen flex items-center justify-center bg-cover bg-center my-4 mx-3 lg:my-3 lg:mx-12 rounded-3xl"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
@@ -72,7 +72,7 @@ function Team() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
+            className="text-5xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
           >
             OUR TEAM
           </motion.h1>
@@ -80,28 +80,25 @@ function Team() {
       </section>
 
       {/* Team Description Section */}
-      <section className="py-32 relative">
-        <div className="px-6 lg:px-12 w-full flex items-center justify-center">
+      <section className="py-12 sm:py-16 lg:py-32 relative">
+        <div className="px-4 sm:px-6 lg:px-12 w-full flex items-center justify-center">
           <motion.div
-            className="text-center max-w-4xl"
+            className="text-center max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <h2 className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest">
               Who We Are
             </h2>
-            <p className="text-2xl text-mw-black mb-6 leading-relaxed">
-              Meet the heartbeat of Marketwaves Media—a dynamic crew of
-              visionaries, creatives, and strategists united by a passion for
-              digital excellence. Based in Liberia, our team thrives on
-              transforming local businesses into digital powerhouses. From
-              crafting stunning visuals to devising game-changing strategies, we
-              bring diverse expertise and unyielding dedication to every
-              project.
+            <p className="text-lg sm:text-xl md:text-2xl text-mw-black mb-4 sm:mb-6 leading-relaxed">
+              Meet the heartbeat of Marketwaves Media—a passionate team of
+              creatives and strategists in Liberia, dedicated to transforming
+              local businesses into digital powerhouses with stunning visuals
+              and game-changing strategies.
             </p>
-            <p className="text-2xl text-mw-gold font-semibold">
+            <p className="text-lg sm:text-xl md:text-2xl text-mw-gold font-semibold">
               Together, we’re not just a team—we’re your partners in success.
             </p>
           </motion.div>

@@ -33,10 +33,10 @@ function Home() {
   ];
 
   return (
-    <div className="pt-24 bg-white text-mw-black overflow-hidden">
+    <div className="pt-24 px-3 lg:px-2 bg-white text-mw-black overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center bg-white overflow-hidden">
-        <div className="px-6 lg:px-12 w-full h-full flex items-center justify-center relative">
+        <div className=" w-full h-full flex items-center justify-center relative">
           <motion.div
             className="text-center relative z-10"
             initial={{ opacity: 0, y: 80 }}
@@ -62,7 +62,7 @@ function Home() {
             >
               <Link
                 to="/contact"
-                className="inline-block bg-mw-gold text-white px-12 py-5 text-xl font-semibold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300"
+                className="inline-block bg-mw-gold text-white px-12 py-5 text-sm lg:text-xl font-semibold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300"
               >
                 Let’s Create
               </Link>
@@ -103,8 +103,8 @@ function Home() {
         </div>
       </section>
       {/* Why Choose Us */}
-      <section className="py-32 bg-white relative">
-        <div className="px-6 lg:px-12 w-full flex items-center justify-center">
+      <section className="pb-14 lg:py-32 bg-white relative">
+        <div className="w-full flex items-center justify-center">
           <div className="text-center">
             <div className="grid md:grid-cols-3 gap-16">
               {whyChooseUs.map((item, i) => (
@@ -143,10 +143,12 @@ function Home() {
                       )}
                     </svg>
                   </motion.div>
-                  <h3 className="text-3xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
+                  <h3 className="text-[28px] font-bold text-mw-black uppercase tracking-widest text-nowrap mb-4">
                     {item.title}
                   </h3>
-                  <p className="text-mw-black/70 text-lg">{item.desc}</p>
+                  <p className="text-mw-black/70 text-2xl lg:text-3xl">
+                    {item.desc}
+                  </p>
                 </motion.div>
               ))}
             </div>
@@ -154,8 +156,8 @@ function Home() {
         </div>
       </section>
       {/* Request a Proposal */}
-      <section className="py-32 bg-white relative overflow-hidden">
-        <div className="px-6 lg:px-12 w-full flex items-center justify-center relative">
+      <section className="py-14 lg:py-32 bg-white relative overflow-hidden">
+        <div className="w-full flex items-center justify-center relative">
           <motion.div
             className="absolute inset-0 bg-mw-gold/5"
             initial={{ opacity: 0 }}
@@ -169,7 +171,7 @@ function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest text-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest"
             >
               Unleash Your Vision
             </motion.h2>
@@ -178,7 +180,7 @@ function Home() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.7 }}
-              className="text-2xl text-mw-black/80 mb-16 max-w-3xl mx-auto"
+              className="text-2xl lg:text-3xl text-mw-black/80 mb-16 max-w-3xl mx-auto"
             >
               Bespoke digital strategies crafted for Liberia’s trailblazers.
             </motion.p>
@@ -189,7 +191,7 @@ function Home() {
             >
               <Link
                 to="/contact"
-                className="bg-mw-gold text-white px-12 py-5 text-xl font-bold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-lg shadow-mw-forest/20"
+                className="bg-mw-gold text-white px-12 py-5 text-sm lg:text-xl font-bold uppercase tracking-widest text-nowrap rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-lg shadow-mw-forest/20"
               >
                 Request a Proposal
               </Link>
@@ -198,7 +200,7 @@ function Home() {
         </div>
       </section>
       {/* Success Stories */}
-      <section className=" bg-white py-32 relative overflow-hidden">
+      <section className="py-14 lg:py-32 bg-white relative overflow-hidden">
         <div className="px-6 lg:px-12 w-full flex items-center justify-center relative">
           <div className="text-center relative z-10">
             <motion.h2
@@ -206,7 +208,7 @@ function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-24 tracking-widest text-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest text-nowrap"
             >
               Triumph Tales
             </motion.h2>
@@ -222,7 +224,7 @@ function Home() {
                     duration: 0.9,
                     ease: "easeOut",
                   }}
-                  className="relative w-full md:w-4/5 p-12 rounded-3xl bg-gradient-to-br from-mw-forest/20 to-mw-black/10 backdrop-blur-md hover:shadow-2xl hover:shadow-mw-gold/40 transition-all duration-500"
+                  className="relative w-full md:w-4/5 py-4 rounded-3xl bg-gradient-to-br from-mw-forest/20 to-mw-black/10 backdrop-blur-md hover:shadow-2xl hover:shadow-mw-gold/40 transition-all duration-500"
                   whileHover={{ scale: 1.05 }}
                 >
                   <p className="text-2xl lg:text-3xl text-mw-black  mb-8 leading-relaxed z-10 relative">
@@ -238,7 +240,7 @@ function Home() {
         </div>
       </section>
       {/* Newsletter */}
-      <section className="py-32 bg-white relative overflow-hidden">
+      <section className="py-14 lg:py-32 bg-white relative overflow-hidden">
         <div className="px-6 lg:px-12 w-full flex items-center justify-center relative">
           <div className="text-center relative z-10">
             <motion.h2
@@ -246,7 +248,7 @@ function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.9, ease: "easeOut" }}
-              className="text-6xl lg:text-7xl font-black text-mw-black uppercase mb-12 tracking-widest text-nowrap"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-mw-black uppercase mb-8 sm:mb-10 lg:mb-12 tracking-widest text-nowrap"
             >
               Stay Ahead
             </motion.h2>
@@ -255,12 +257,12 @@ function Home() {
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.7 }}
-              className="text-2xl text-mw-black/80 mb-16 max-w-2xl mx-auto"
+              className="text-2xl lg:text-3xl text-mw-black/80 mb-8 lg:mb-12 max-w-2xl mx-auto"
             >
               Get the latest digital insights from Liberia.
             </motion.p>
             <motion.div
-              className="flex max-w-xl mx-auto shadow-sm rounded-full"
+              className="flex w-full max-w-xs sm:max-w-sm lg:max-w-xl mx-auto shadow-sm rounded-full"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -269,9 +271,9 @@ function Home() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-8 py-5 bg-mw-black/10 text-mw-black  border-none focus:outline-none placeholder-mw-black/50"
+                className="flex-1 px-3 sm:px-5 lg:px-8 py-3 sm:py-4 lg:py-5 bg-mw-black/10 text-mw-black border-none focus:outline-none placeholder-mw-black/50 text-sm sm:text-base"
               />
-              <button className="bg-mw-gold text-white px-10 py-5 rounded-r-full  font-bold uppercase tracking-widest text-nowrap hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20">
+              <button className="bg-mw-gold text-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 rounded-r-full font-bold uppercase tracking-widest text-nowrap hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20 text-xs sm:text-sm lg:text-base">
                 Join Now
               </button>
             </motion.div>

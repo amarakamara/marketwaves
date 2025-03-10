@@ -52,7 +52,7 @@ function Services() {
     <div className="pt-24 min-h-screen bg-white overflow-hidden">
       {/* Hero Section with Background Image and Overlay Text */}
       <section
-        className="relative h-screen flex items-center justify-center bg-cover bg-center m-6 lg:mx-12 rounded-3xl"
+        className="relative h-[500px] lg:h-screen flex items-center justify-center bg-cover bg-center my-4 mx-3 lg:my-3 lg:mx-12 rounded-3xl"
         style={{
           backgroundImage:
             "url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
@@ -66,7 +66,7 @@ function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="text-6xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-nowrap"
+            className="text-5xl lg:text-9xl font-black text-white uppercase mb-20 tracking-widest text-wrap"
           >
             OUR SERVICES
           </motion.h1>
@@ -74,9 +74,9 @@ function Services() {
       </section>
 
       {/* Services Section */}
-      <section className="py-48 relative">
-        <div className="px-6 lg:px-12 w-full flex items-center justify-center">
-          <div className="grid md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 lg:py-32 relative">
+        <div className="px-4 sm:px-6 lg:px-12 w-full flex items-center justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16">
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -88,16 +88,19 @@ function Services() {
                   duration: 0.8,
                   ease: "easeOut",
                 }}
-                className="relative p-10 rounded-3xl shadow-sm bg-gradient-to-br from-mw-forest/20 to-mw-black/10 backdrop-blur-md hover:shadow-2xl hover:shadow-mw-gold/40 transition-all duration-500"
+                className="relative p-6 sm:p-8 md:p-10 rounded-3xl shadow-sm bg-gradient-to-br from-mw-forest/20 to-mw-black/10 backdrop-blur-md hover:shadow-2xl hover:shadow-mw-gold/40 transition-all duration-500"
                 whileHover={{ scale: 1.05 }}
               >
-                <h2 className="text-3xl lg:text-4xl font-bold text-mw-black uppercase tracking-widest text-nowrap mb-6">
+                <h2 className="text-xl sm:text-xl md:text-3xl lg:text-4xl font-bold text-mw-black uppercase tracking-widest text-wrap mb-4 sm:mb-6">
                   {service.title}
                 </h2>
-                <ul className="text-mw-black space-y-4 mb-8">
+                <ul className="text-mw-black space-y-2 sm:space-y-3 md:space-y-4 mb-6 sm:mb-8">
                   {service.details.map((detail) => (
-                    <li key={detail} className="flex items-start text-2xl">
-                      <span className="mr-3 text-mw-gold">•</span>
+                    <li
+                      key={detail}
+                      className="flex items-start text-lg sm:text-xl md:text-2xl"
+                    >
+                      <span className="mr-2 sm:mr-3 text-mw-gold">•</span>
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -109,7 +112,7 @@ function Services() {
                 >
                   <Link
                     to="/contact"
-                    className="inline-block bg-mw-gold text-white px-8 py-4 text-lg font-bold uppercase tracking-wider rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20"
+                    className="inline-block bg-mw-gold text-white px-6 py-3 sm:px-7 sm:py-4 text-base sm:text-lg md:text-lg font-bold uppercase tracking-wider rounded-full hover:bg-mw-gold hover:text-mw-black transition-all duration-300 shadow-md shadow-mw-forest/20"
                   >
                     Request a Quote
                   </Link>

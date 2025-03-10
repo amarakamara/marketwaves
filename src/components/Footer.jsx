@@ -36,7 +36,7 @@ function Footer() {
 
   return (
     <footer className="bg-mw-forest text-mw-mint py-16 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-3 lg:px-2">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.5fr_1fr] gap-12">
           {/* Brand Section */}
           <motion.div
